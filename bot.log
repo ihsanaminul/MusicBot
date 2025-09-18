@@ -1,0 +1,923 @@
+2025-09-15 16:56:29,975 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-09-15 16:56:29,976 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 16:56:30,102 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 16:56:30,103 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 16:56:30,104 - discord.client - INFO - logging in using static token
+2025-09-15 16:56:30,923 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d774cc52fcaed9875b384540926bc6e7).
+2025-09-15 16:56:32,932 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 16:56:32,932 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 16:56:32,933 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 16:59:42,855 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 16:59:42,977 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 16:59:42,980 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 16:59:42,982 - discord.client - INFO - logging in using static token
+2025-09-15 16:59:43,762 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 771b98dd8654b673cf5bac942b772cbd).
+2025-09-15 16:59:45,771 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 16:59:45,771 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 16:59:45,771 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 16:59:56,093 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 16:59:56,190 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 16:59:56,191 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 16:59:56,192 - discord.client - INFO - logging in using static token
+2025-09-15 16:59:56,997 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 3ef76d75a6a0c51b1777a7add59cdfb6).
+2025-09-15 16:59:59,002 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 16:59:59,002 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 16:59:59,002 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:00:10,469 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:00:10,469 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:00:10,718 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11050.discord.media
+2025-09-15 17:00:12,257 - __main__ - INFO - Connected to voice channel 🎧┃Cleo's Music
+2025-09-15 17:00:12,692 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:00:12,736 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:00:15,016 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:00:16,127 - __main__ - WARNING - Attempt 1/3 failed: ffmpeg was not found.
+2025-09-15 17:00:19,328 - __main__ - WARNING - Attempt 2/3 failed: ffmpeg was not found.
+2025-09-15 17:00:24,320 - __main__ - WARNING - Attempt 3/3 failed: ffmpeg was not found.
+2025-09-15 17:00:24,320 - __main__ - ERROR - All retry attempts failed. Last error: ffmpeg was not found.
+2025-09-15 17:00:24,320 - __main__ - ERROR - Failed to load audio source after retries: ffmpeg was not found.
+2025-09-15 17:00:24,320 - __main__ - INFO - Retrying song Coba Lagi (attempt 2)
+2025-09-15 17:00:26,321 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:00:27,595 - __main__ - WARNING - Attempt 1/3 failed: ffmpeg was not found.
+2025-09-15 17:00:30,705 - __main__ - WARNING - Attempt 2/3 failed: ffmpeg was not found.
+2025-09-15 17:00:35,618 - __main__ - WARNING - Attempt 3/3 failed: ffmpeg was not found.
+2025-09-15 17:00:35,619 - __main__ - ERROR - All retry attempts failed. Last error: ffmpeg was not found.
+2025-09-15 17:00:35,619 - __main__ - ERROR - Failed to load audio source after retries: ffmpeg was not found.
+2025-09-15 17:00:35,619 - __main__ - INFO - Retrying song Coba Lagi (attempt 3)
+2025-09-15 17:00:37,621 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:00:39,102 - __main__ - WARNING - Attempt 1/3 failed: ffmpeg was not found.
+2025-09-15 17:00:42,176 - __main__ - WARNING - Attempt 2/3 failed: ffmpeg was not found.
+2025-09-15 17:00:47,113 - __main__ - WARNING - Attempt 3/3 failed: ffmpeg was not found.
+2025-09-15 17:00:47,120 - __main__ - ERROR - All retry attempts failed. Last error: ffmpeg was not found.
+2025-09-15 17:00:47,124 - __main__ - ERROR - Failed to load audio source after retries: ffmpeg was not found.
+2025-09-15 17:02:01,426 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:02:01,544 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:02:01,545 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:02:01,546 - discord.client - INFO - logging in using static token
+2025-09-15 17:02:02,304 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 70def72faaaed31673539140846fea9e).
+2025-09-15 17:02:04,311 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:02:04,311 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:02:04,311 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:02:53,940 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:02:54,040 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:02:54,041 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:02:54,042 - discord.client - INFO - logging in using static token
+2025-09-15 17:02:55,396 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 33e957761724144eec743778a9fde830).
+2025-09-15 17:02:57,419 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:02:57,419 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:02:57,419 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:03:08,509 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:03:08,510 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:03:08,770 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11050.discord.media
+2025-09-15 17:03:10,343 - __main__ - INFO - Connected to voice channel 🎧┃Cleo's Music
+2025-09-15 17:03:10,531 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:03:10,572 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:03:12,731 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:03:13,924 - __main__ - WARNING - Attempt 1/3 failed: discord.player.FFmpegPCMAudio() got multiple values for keyword argument 'executable'
+2025-09-15 17:03:16,994 - __main__ - WARNING - Attempt 2/3 failed: discord.player.FFmpegPCMAudio() got multiple values for keyword argument 'executable'
+2025-09-15 17:03:22,019 - __main__ - WARNING - Attempt 3/3 failed: discord.player.FFmpegPCMAudio() got multiple values for keyword argument 'executable'
+2025-09-15 17:03:22,019 - __main__ - ERROR - All retry attempts failed. Last error: discord.player.FFmpegPCMAudio() got multiple values for keyword argument 'executable'
+2025-09-15 17:03:22,019 - __main__ - ERROR - Failed to load audio source after retries: discord.player.FFmpegPCMAudio() got multiple values for keyword argument 'executable'
+2025-09-15 17:03:22,020 - __main__ - INFO - Retrying song Coba Lagi (attempt 2)
+2025-09-15 17:03:24,021 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:03:25,679 - __main__ - WARNING - Attempt 1/3 failed: 'executable'
+2025-09-15 17:03:28,516 - __main__ - WARNING - Attempt 2/3 failed: 'executable'
+2025-09-15 17:03:34,036 - __main__ - WARNING - Attempt 3/3 failed: 'executable'
+2025-09-15 17:03:34,038 - __main__ - ERROR - All retry attempts failed. Last error: 'executable'
+2025-09-15 17:03:34,038 - __main__ - ERROR - Failed to load audio source after retries: 'executable'
+2025-09-15 17:03:34,038 - __main__ - INFO - Retrying song Coba Lagi (attempt 3)
+2025-09-15 17:03:36,040 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:03:37,070 - __main__ - WARNING - Attempt 1/3 failed: 'executable'
+2025-09-15 17:03:40,122 - __main__ - WARNING - Attempt 2/3 failed: 'executable'
+2025-09-15 17:03:45,408 - __main__ - WARNING - Attempt 3/3 failed: 'executable'
+2025-09-15 17:03:45,414 - __main__ - ERROR - All retry attempts failed. Last error: 'executable'
+2025-09-15 17:03:45,423 - __main__ - ERROR - Failed to load audio source after retries: 'executable'
+2025-09-15 17:03:56,812 - discord.voice_client - INFO - Disconnecting from voice normally, close code 1000.
+2025-09-15 17:03:57,064 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1417189012296302612 (Guild ID 1353257210855166022)
+2025-09-15 17:04:36,414 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:04:36,534 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:04:36,536 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:04:36,536 - discord.client - INFO - logging in using static token
+2025-09-15 17:04:37,605 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 367fb3038ca29b8612bf10f3dcf1a649).
+2025-09-15 17:04:39,626 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:04:39,626 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:04:39,626 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:05:18,738 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:05:18,738 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:05:19,191 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin12-468f6295.discord.media
+2025-09-15 17:06:05,244 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:06:05,369 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:06:05,371 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:06:05,371 - discord.client - INFO - logging in using static token
+2025-09-15 17:06:06,196 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 0e1d0f1dad94495be4a697cd7648e50b).
+2025-09-15 17:06:08,201 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:06:08,201 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:06:08,201 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:06:16,479 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:06:16,480 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:06:16,732 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11120.discord.media
+2025-09-15 17:06:18,021 - __main__ - ERROR - Voice connection error (attempt 1/3): list index out of range
+2025-09-15 17:06:19,023 - __main__ - ERROR - Voice connection error (attempt 2/3): Already connected to a voice channel.
+2025-09-15 17:06:21,026 - __main__ - ERROR - Voice connection error (attempt 3/3): Already connected to a voice channel.
+2025-09-15 17:06:44,107 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1417194741694468178 (Guild ID 1353257210855166022)
+2025-09-15 17:07:45,508 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:07:45,593 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:07:45,595 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:07:45,595 - discord.client - INFO - logging in using static token
+2025-09-15 17:07:46,181 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: bac316532890d15c8c260f4363f8d9aa).
+2025-09-15 17:07:48,187 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:07:48,189 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:07:48,190 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:07:54,717 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:07:54,719 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:07:54,977 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11120.discord.media
+2025-09-15 17:07:56,267 - __main__ - ERROR - Voice connection error (attempt 1/3): list index out of range
+2025-09-15 17:07:57,268 - __main__ - ERROR - Voice connection error (attempt 2/3): Already connected to a voice channel.
+2025-09-15 17:07:59,275 - __main__ - ERROR - Voice connection error (attempt 3/3): Already connected to a voice channel.
+2025-09-15 17:08:55,795 - discord.gateway - WARNING - Shard ID None has stopped responding to the gateway. Closing and restarting.
+2025-09-15 17:11:02,957 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:11:03,075 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:11:03,076 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:11:03,076 - discord.client - INFO - logging in using static token
+2025-09-15 17:11:04,341 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: f40f9e6343f0980594594dbb4aa720f8).
+2025-09-15 17:11:06,346 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:11:06,346 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:11:06,346 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:11:46,152 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:11:46,257 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:11:46,260 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:11:46,260 - discord.client - INFO - logging in using static token
+2025-09-15 17:11:47,270 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: b62439bf6e82cd612cdb8ee1ec018c87).
+2025-09-15 17:11:49,283 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:11:49,283 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:11:49,283 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:12:13,926 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:12:13,928 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:12:14,186 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11152.discord.media
+2025-09-15 17:12:15,756 - __main__ - INFO - Connected to voice channel 🎧┃Cleo's Music
+2025-09-15 17:12:16,062 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:12:16,098 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:12:18,416 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:12:19,612 - __main__ - ERROR - Error playing song: 
+2025-09-15 17:12:19,730 - discord.player - INFO - ffmpeg process 2818 has not terminated. Waiting to terminate...
+2025-09-15 17:12:19,735 - discord.player - INFO - ffmpeg process 2818 should have terminated with a return code of -9.
+2025-09-15 17:13:31,145 - __main__ - INFO - Already connected to voice channel 🎧┃Cleo's Music
+2025-09-15 17:13:31,846 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:13:31,865 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:13:33,979 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:13:35,234 - __main__ - ERROR - Error playing song: 
+2025-09-15 17:13:35,444 - discord.player - INFO - ffmpeg process 2887 has not terminated. Waiting to terminate...
+2025-09-15 17:13:35,448 - discord.player - INFO - ffmpeg process 2887 should have terminated with a return code of -9.
+2025-09-15 17:17:17,490 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-15 17:17:17,590 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:17:17,591 - __main__ - ERROR - DISCORD_TOKEN not found in environment variables!
+2025-09-15 17:17:59,412 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-15 17:17:59,496 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:17:59,497 - __main__ - ERROR - DISCORD_TOKEN not found in environment variables!
+2025-09-15 17:18:04,665 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-15 17:18:04,813 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:18:04,815 - __main__ - ERROR - DISCORD_TOKEN not found in environment variables!
+2025-09-15 17:18:28,802 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-15 17:18:28,889 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:18:28,890 - __main__ - ERROR - DISCORD_TOKEN not found in environment variables!
+2025-09-15 17:18:44,382 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-15 17:18:44,467 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:18:44,468 - __main__ - ERROR - DISCORD_TOKEN not found in environment variables!
+2025-09-15 17:21:28,187 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-15 17:21:28,288 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:21:28,289 - __main__ - ERROR - DISCORD_TOKEN not found in environment variables!
+2025-09-15 17:21:45,302 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-15 17:21:45,445 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:21:45,448 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:21:45,449 - discord.client - INFO - logging in using static token
+2025-09-15 17:21:47,157 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 0f83c27db857916394ab0ad579a4afc4).
+2025-09-15 17:21:49,192 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:21:49,195 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:21:49,202 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:26:53,353 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:26:53,450 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:26:53,456 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:26:53,461 - discord.client - INFO - logging in using static token
+2025-09-15 17:26:55,230 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 89e55ebb51119abec685f230f802d0bd).
+2025-09-15 17:26:57,251 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:26:57,252 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:26:57,252 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:26:57,253 - __main__ - WARNING - Opus check failed: load_opus() missing 1 required positional argument: 'name'
+2025-09-15 17:26:57,253 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:27:31,627 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:27:31,722 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:27:31,723 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:27:31,723 - discord.client - INFO - logging in using static token
+2025-09-15 17:27:33,502 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2b2425350dacc9575e9a96f8210b1d68).
+2025-09-15 17:27:35,508 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:27:35,508 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:27:35,508 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:27:35,527 - __main__ - INFO - Opus library not loaded - using default audio codec
+2025-09-15 17:27:35,527 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:29:39,772 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:29:39,930 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:29:39,940 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:29:39,944 - discord.client - INFO - logging in using static token
+2025-09-15 17:29:41,626 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 378c3663de5b1ec8224b204e0b58747d).
+2025-09-15 17:29:43,634 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:29:43,635 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:29:43,635 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:29:43,648 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 17:29:43,648 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:31:37,355 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:31:37,502 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:31:37,504 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:31:37,505 - discord.client - INFO - logging in using static token
+2025-09-15 17:31:39,115 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 5ad2226355b9c2433a26999b7328049e).
+2025-09-15 17:31:41,144 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:31:41,146 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:31:41,147 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:31:41,150 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 17:31:41,151 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:32:01,856 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:32:01,857 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:32:02,362 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11022.discord.media
+2025-09-15 17:32:02,902 - __main__ - INFO - Connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:32:03,451 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:32:03,598 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:32:07,114 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 17:32:35,096 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:32:35,652 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:32:35,780 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:34:35,458 - __main__ - INFO - Song finished: Coba Lagi
+2025-09-15 17:34:35,461 - __main__ - INFO - Playing: Sahabat Jadi Cinta (2024 Remake)
+2025-09-15 17:34:35,464 - discord.player - INFO - ffmpeg process 2009 successfully terminated with return code of 0.
+2025-09-15 17:36:15,134 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:38:57,770 - __main__ - INFO - Song finished: Sahabat Jadi Cinta (2024 Remake)
+2025-09-15 17:38:57,772 - __main__ - INFO - Playing: DJ MAMA MUDA STYLE LAMBADA TREND VELOCITY DJ VIRAL TIKTOK 2025 YG KALIAN CARI
+2025-09-15 17:38:57,774 - discord.player - INFO - ffmpeg process 2124 successfully terminated with return code of 0.
+2025-09-15 17:40:53,420 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:41:43,365 - __main__ - INFO - Song finished: DJ MAMA MUDA STYLE LAMBADA TREND VELOCITY DJ VIRAL TIKTOK 2025 YG KALIAN CARI
+2025-09-15 17:41:43,366 - discord.player - INFO - ffmpeg process 2187 has not terminated. Waiting to terminate...
+2025-09-15 17:41:43,368 - __main__ - INFO - Playing: DJ KASIH ABA ABA SOUND FYP VIRAL TIKTOK YANG KALIAN CARI CARI!!! 🎧
+2025-09-15 17:41:43,391 - discord.player - INFO - ffmpeg process 2187 should have terminated with a return code of -9.
+2025-09-15 17:42:19,887 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:42:20,456 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:42:20,583 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:42:27,917 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:42:28,515 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:42:28,646 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:42:36,755 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:42:37,431 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:42:37,560 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:42:49,409 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:42:49,829 - spotipy.cache_handler - WARNING - Couldn't read cache at: .cache
+2025-09-15 17:42:49,964 - spotipy.cache_handler - WARNING - Couldn't write token to cache at: .cache
+2025-09-15 17:43:10,197 - __main__ - INFO - Song finished: DJ KASIH ABA ABA SOUND FYP VIRAL TIKTOK YANG KALIAN CARI CARI!!! 🎧
+2025-09-15 17:43:10,199 - __main__ - INFO - Playing: Hilang - From "Indo Camp"
+2025-09-15 17:43:10,204 - discord.player - INFO - ffmpeg process 2384 has not terminated. Waiting to terminate...
+2025-09-15 17:43:10,209 - discord.player - INFO - ffmpeg process 2384 should have terminated with a return code of -9.
+2025-09-15 17:44:08,409 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:44:08,500 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:44:08,502 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:44:08,502 - discord.client - INFO - logging in using static token
+2025-09-15 17:44:10,155 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: acc63cc7511453fdec686d0ae81ea633).
+2025-09-15 17:44:12,162 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:44:12,162 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:44:12,163 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:44:12,165 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 17:44:12,165 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:46:57,916 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:46:58,010 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:46:58,015 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:46:58,017 - discord.client - INFO - logging in using static token
+2025-09-15 17:46:59,556 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e0cf0d3f066fa2733075d12c0a49852b).
+2025-09-15 17:47:01,561 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:47:01,562 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:47:01,562 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:47:01,565 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 17:47:01,565 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:48:42,448 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:48:42,554 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:48:42,557 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:48:42,558 - discord.client - INFO - logging in using static token
+2025-09-15 17:48:44,210 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: a5da3496a2d72629ef8793beafce44e8).
+2025-09-15 17:48:46,221 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:48:46,221 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:48:46,221 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:48:46,224 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 17:48:46,224 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:50:58,958 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 17:50:59,074 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 17:50:59,076 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 17:50:59,076 - discord.client - INFO - logging in using static token
+2025-09-15 17:51:00,588 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 6e249b572e5e1e9dfce7a745610286c4).
+2025-09-15 17:51:02,599 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 17:51:02,599 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 17:51:02,600 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 17:51:02,604 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 17:51:02,605 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 17:51:12,647 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 17:51:12,647 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 17:51:13,151 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11022.discord.media
+2025-09-15 17:51:13,740 - __main__ - INFO - Connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:51:17,462 - __main__ - INFO - Playing: 1/10
+2025-09-15 17:51:21,141 - __main__ - INFO - Autoplay enabled for guild 1353257210855166022
+2025-09-15 17:54:22,882 - __main__ - INFO - Song finished: 1/10
+2025-09-15 17:54:22,884 - __main__ - INFO - Autoplay triggered, finding recommendations based on: 1/10
+2025-09-15 17:54:22,886 - discord.player - INFO - ffmpeg process 3615 successfully terminated with return code of 0.
+2025-09-15 17:54:23,125 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '35uNrhq5sf2zDI2aKJPNBa'} returned 404 due to None
+2025-09-15 17:54:23,126 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code:-1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=35uNrhq5sf2zDI2aKJPNBa:
+ None, reason: None
+2025-09-15 17:54:27,798 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-15 17:54:28,283 - __main__ - INFO - Playing: Tenxi, suisei & Jemsii - mejikuhibiniu (Official Music Video)
+2025-09-15 17:55:57,424 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 17:58:21,419 - __main__ - INFO - Song finished: Tenxi, suisei & Jemsii - mejikuhibiniu (Official Music Video)
+2025-09-15 17:58:21,420 - discord.player - INFO - ffmpeg process 3682 successfully terminated with return code of 0.
+2025-09-15 17:58:21,421 - __main__ - INFO - Playing: Naykilla, Tenxi & Jemsii - Kasih Aba-Aba (Official Music Video)
+2025-09-15 18:01:42,298 - __main__ - INFO - Song finished: Naykilla, Tenxi & Jemsii - Kasih Aba-Aba (Official Music Video)
+2025-09-15 18:01:42,299 - discord.player - INFO - ffmpeg process 3728 has not terminated. Waiting to terminate...
+2025-09-15 18:01:42,300 - __main__ - INFO - Playing: Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku) (Official Music Video)
+2025-09-15 18:01:42,303 - discord.player - INFO - ffmpeg process 3728 should have terminated with a return code of 0.
+2025-09-15 18:05:08,712 - __main__ - INFO - Song finished: Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku) (Official Music Video)
+2025-09-15 18:05:08,712 - discord.player - INFO - ffmpeg process 3757 successfully terminated with return code of 0.
+2025-09-15 18:05:08,713 - __main__ - INFO - Playing: Sahabat Jadi Cinta (2024 Remake)
+2025-09-15 18:09:30,860 - __main__ - INFO - Song finished: Sahabat Jadi Cinta (2024 Remake)
+2025-09-15 18:09:30,862 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Sahabat Jadi Cinta (2024 Remake)
+2025-09-15 18:09:30,865 - discord.player - INFO - ffmpeg process 3786 successfully terminated with return code of 0.
+2025-09-15 18:09:31,151 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '2DwdTYbwHO7UaDmu5lYYiN'} returned 404 due to None
+2025-09-15 18:09:31,152 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code:-1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=2DwdTYbwHO7UaDmu5lYYiN:
+ None, reason: None
+2025-09-15 18:09:35,956 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-15 18:09:36,435 - __main__ - INFO - Playing: Kumpulan Lagu Terbaik Zigaz | The Best Songs of Zigaz | Zigaz Top Songs
+2025-09-15 18:20:02,138 - __main__ - INFO - Bot alone in voice channel 🔊┃Voice Ⅰ, disconnecting in 2 minutes
+2025-09-15 18:20:41,989 - discord.voice_client - ERROR - Disconnected from voice... Reconnecting in 1.97s.
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 461, in poll_voice_ws
+    await self.ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1006
+2025-09-15 18:20:43,960 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257212813774858 (Guild ID 1353257210855166022)
+2025-09-15 18:20:43,960 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 18:20:43,960 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 2)
+2025-09-15 18:20:44,489 - discord.voice_client - INFO - Voice handshake complete. Endpoint found india10024.discord.media
+2025-09-15 18:22:02,141 - discord.voice_client - INFO - Disconnecting from voice normally, close code 1000.
+2025-09-15 18:22:02,147 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257212813774858 (Guild ID 1353257210855166022)
+2025-09-15 18:22:02,148 - __main__ - INFO - Auto-disconnected from empty voice channel in guild 1353257210855166022
+2025-09-15 18:22:02,149 - __main__ - INFO - Song finished: Unknown
+2025-09-15 18:22:02,149 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Sahabat Jadi Cinta (2024 Remake)
+2025-09-15 18:22:02,151 - discord.player - INFO - ffmpeg process 3815 has not terminated. Waiting to terminate...
+2025-09-15 18:22:02,154 - __main__ - WARNING - Spotify recommendations failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-09-15 18:22:02,161 - discord.player - INFO - ffmpeg process 3815 should have terminated with a return code of -9.
+2025-09-15 18:22:14,108 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-15 18:22:14,581 - __main__ - INFO - Playing: Zigas ful album (tanpa iklan)
+2025-09-15 18:22:15,665 - __main__ - WARNING - Voice client disconnected during playback setup
+2025-09-15 23:35:21,067 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 23:35:21,181 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 23:35:21,182 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 23:35:21,182 - discord.client - INFO - logging in using static token
+2025-09-15 23:35:22,702 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: b4156116a85730c73bd165be16f9b3a3).
+2025-09-15 23:35:24,711 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 23:35:24,711 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 23:35:24,711 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 23:35:24,728 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 23:35:24,728 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 23:35:40,140 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 23:35:40,140 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 23:35:41,192 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin09-1d56a4e4.discord.media
+2025-09-15 23:35:41,458 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:35:42,465 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257212813774858 (Guild ID 1353257210855166022)
+2025-09-15 23:35:42,465 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 2)
+2025-09-15 23:35:43,303 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin09-1d56a4e4.discord.media
+2025-09-15 23:35:43,564 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:35:46,566 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257212813774858 (Guild ID 1353257210855166022)
+2025-09-15 23:35:46,566 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 3)
+2025-09-15 23:35:47,364 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin09-1d56a4e4.discord.media
+2025-09-15 23:35:47,371 - asyncio - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-sin09-1d56a4e4.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-09-15 23:35:47,624 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:35:52,626 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257212813774858 (Guild ID 1353257210855166022)
+2025-09-15 23:35:52,627 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 4)
+2025-09-15 23:35:53,441 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin09-1d56a4e4.discord.media
+2025-09-15 23:35:53,732 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:36:00,736 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257212813774858 (Guild ID 1353257210855166022)
+2025-09-15 23:36:00,736 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 5)
+2025-09-15 23:36:01,564 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin09-1d56a4e4.discord.media
+2025-09-15 23:36:01,835 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:36:10,837 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257212813774858 (Guild ID 1353257210855166022)
+2025-09-15 23:36:10,838 - __main__ - INFO - Connected to voice channel 🔊┃Voice Ⅰ
+2025-09-15 23:36:11,352 - asyncio - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-sin09-1d56a4e4.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-09-15 23:36:11,353 - asyncio - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-sin09-1d56a4e4.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-09-15 23:36:11,353 - asyncio - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-sin09-1d56a4e4.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-09-15 23:36:14,609 - __main__ - INFO - Playing: Sahabat Jadi Cinta (2024 Remake)
+2025-09-15 23:36:16,183 - __main__ - WARNING - Voice client disconnected during playback setup
+2025-09-15 23:36:24,734 - __main__ - INFO - Cleaning up disconnected voice client for guild 1353257210855166022
+2025-09-15 23:36:24,735 - discord.player - INFO - ffmpeg process 184 has not terminated. Waiting to terminate...
+2025-09-15 23:36:24,740 - discord.player - INFO - ffmpeg process 184 should have terminated with a return code of -9.
+2025-09-15 23:37:15,535 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 23:37:15,641 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 23:37:15,643 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 23:37:15,643 - discord.client - INFO - logging in using static token
+2025-09-15 23:37:17,319 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 908de91a6c5b8ec67097873f84029b53).
+2025-09-15 23:37:19,510 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 23:37:19,510 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 23:37:19,510 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 23:37:19,513 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 23:37:19,513 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 23:37:21,752 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 23:37:21,753 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 23:37:22,264 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11044.discord.media
+2025-09-15 23:37:22,792 - __main__ - INFO - Connected to voice channel 🔊┃Voice Ⅱ
+2025-09-15 23:37:26,560 - __main__ - INFO - Playing: you!
+2025-09-15 23:37:39,379 - __main__ - INFO - Autoplay enabled for guild 1353257210855166022
+2025-09-15 23:42:21,616 - __main__ - INFO - Song finished: you!
+2025-09-15 23:42:21,617 - __main__ - INFO - Autoplay triggered, finding recommendations based on: you!
+2025-09-15 23:42:21,619 - discord.player - INFO - ffmpeg process 247 successfully terminated with return code of 0.
+2025-09-15 23:42:21,857 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '1vg0ZHaTvBwlNxLxyYrEvP'} returned 404 due to None
+2025-09-15 23:42:21,857 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code:-1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=1vg0ZHaTvBwlNxLxyYrEvP:
+ None, reason: None
+2025-09-15 23:42:26,826 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-15 23:42:27,339 - __main__ - INFO - Playing: L A N Y - 2023 Playlist (Best Songs)
+2025-09-15 23:45:13,006 - __main__ - INFO - Song finished: L A N Y - 2023 Playlist (Best Songs)
+2025-09-15 23:45:13,006 - discord.player - INFO - ffmpeg process 276 has not terminated. Waiting to terminate...
+2025-09-15 23:45:13,007 - __main__ - INFO - Playing: [𝓹𝓵𝓪𝔂𝓵𝓲𝓼𝓽] LANY
+2025-09-15 23:45:13,012 - discord.player - INFO - ffmpeg process 276 should have terminated with a return code of -9.
+2025-09-15 23:45:30,783 - __main__ - INFO - Song finished: [𝓹𝓵𝓪𝔂𝓵𝓲𝓼𝓽] LANY
+2025-09-15 23:45:30,784 - discord.player - INFO - ffmpeg process 305 has not terminated. Waiting to terminate...
+2025-09-15 23:45:30,785 - __main__ - INFO - Playing: LANY Concert Setlist/Playlist 2025
+2025-09-15 23:45:30,789 - discord.player - INFO - ffmpeg process 305 should have terminated with a return code of -9.
+2025-09-15 23:45:37,538 - __main__ - INFO - Song finished: LANY Concert Setlist/Playlist 2025
+2025-09-15 23:45:37,540 - discord.player - INFO - ffmpeg process 334 has not terminated. Waiting to terminate...
+2025-09-15 23:45:37,540 - __main__ - INFO - Autoplay triggered, finding recommendations based on: LANY Concert Setlist/Playlist 2025
+2025-09-15 23:45:37,548 - discord.player - INFO - ffmpeg process 334 should have terminated with a return code of -9.
+2025-09-15 23:45:41,723 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-15 23:45:42,158 - __main__ - INFO - Playing: I Woke Up In 2014 Summer (Top 10 Songs) 🌞🎶
+2025-09-15 23:46:03,359 - __main__ - INFO - Song finished: I Woke Up In 2014 Summer (Top 10 Songs) 🌞🎶
+2025-09-15 23:46:03,359 - discord.player - INFO - ffmpeg process 347 has not terminated. Waiting to terminate...
+2025-09-15 23:46:03,360 - __main__ - INFO - Playing: CHOCOLATE FACTORY BAND Best Cover Nonstop || Beautiful Scar, Where Is The Love?, High Reggae Remix
+2025-09-15 23:46:03,364 - discord.player - INFO - ffmpeg process 347 should have terminated with a return code of -9.
+2025-09-15 23:46:23,133 - discord.voice_client - INFO - Disconnecting from voice normally, close code 1000.
+2025-09-15 23:46:23,143 - __main__ - INFO - Song finished: Unknown
+2025-09-15 23:46:23,144 - __main__ - INFO - Autoplay triggered, finding recommendations based on: I Woke Up In 2014 Summer (Top 10 Songs) 🌞🎶
+2025-09-15 23:46:23,144 - discord.player - INFO - ffmpeg process 392 has not terminated. Waiting to terminate...
+2025-09-15 23:46:23,162 - discord.player - INFO - ffmpeg process 392 should have terminated with a return code of -9.
+2025-09-15 23:46:23,222 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1417143545566855259 (Guild ID 1353257210855166022)
+2025-09-15 23:46:31,083 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-15 23:46:31,669 - __main__ - INFO - Playing: 🎵 The 10 Most Popular Pop Songs in History 🎶
+2025-09-15 23:46:32,847 - __main__ - WARNING - Voice client disconnected during playback setup
+2025-09-15 23:46:52,018 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 23:46:52,018 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 23:46:52,538 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11044.discord.media
+2025-09-15 23:46:53,061 - __main__ - INFO - Connected to voice channel 🔊┃Voice Ⅱ
+2025-09-15 23:46:55,734 - __main__ - INFO - Playing: 🎵 The 10 Most Popular Pop Songs in History 🎶
+2025-09-15 23:46:57,321 - discord.player - INFO - ffmpeg process 422 has not terminated. Waiting to terminate...
+2025-09-15 23:46:57,325 - discord.player - INFO - ffmpeg process 422 should have terminated with a return code of -9.
+2025-09-15 23:47:12,106 - __main__ - INFO - Song finished: Unknown
+2025-09-15 23:47:12,107 - __main__ - INFO - Autoplay triggered, finding recommendations based on: I Woke Up In 2014 Summer (Top 10 Songs) 🌞🎶
+2025-09-15 23:47:12,107 - discord.player - INFO - ffmpeg process 451 has not terminated. Waiting to terminate...
+2025-09-15 23:47:12,117 - discord.player - INFO - ffmpeg process 451 should have terminated with a return code of -9.
+2025-09-15 23:47:25,457 - __main__ - INFO - Already connected to voice channel 🔊┃Voice Ⅱ
+2025-09-15 23:47:25,996 - __main__ - INFO - Generated 2 autoplay recommendations
+2025-09-15 23:47:27,702 - __main__ - INFO - Playing: 🔥 The 10 BEST Songs Of BAD BUNNY 🎧
+2025-09-15 23:47:34,890 - __main__ - INFO - Song finished: 🔥 The 10 BEST Songs Of BAD BUNNY 🎧
+2025-09-15 23:47:34,891 - discord.player - INFO - ffmpeg process 496 has not terminated. Waiting to terminate...
+2025-09-15 23:47:34,891 - __main__ - INFO - Playing: The 10 Best Spanish Songs 🎤
+2025-09-15 23:47:34,895 - discord.player - INFO - ffmpeg process 496 should have terminated with a return code of -9.
+2025-09-15 23:47:45,651 - __main__ - INFO - Song finished: The 10 Best Spanish Songs 🎤
+2025-09-15 23:47:45,652 - discord.player - INFO - ffmpeg process 509 has not terminated. Waiting to terminate...
+2025-09-15 23:47:45,652 - __main__ - INFO - Playing: Coba Lagi
+2025-09-15 23:47:45,657 - discord.player - INFO - ffmpeg process 509 should have terminated with a return code of -9.
+2025-09-15 23:47:51,305 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 23:47:51,390 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 23:47:51,391 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 23:47:51,392 - discord.client - INFO - logging in using static token
+2025-09-15 23:47:53,117 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 3d6ad094894b2366e16783c0ef3dd1f9).
+2025-09-15 23:47:55,317 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 23:47:55,319 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 23:47:55,319 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 23:47:55,322 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 23:47:55,323 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 23:48:06,759 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 23:48:06,759 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 23:48:07,276 - discord.voice_client - INFO - Voice handshake complete. Endpoint found singapore11137.discord.media
+2025-09-15 23:48:07,744 - __main__ - ERROR - Voice connection error (attempt 1/3): list index out of range
+2025-09-15 23:48:08,747 - __main__ - ERROR - Voice connection error (attempt 2/3): Already connected to a voice channel.
+2025-09-15 23:48:10,749 - __main__ - ERROR - Voice connection error (attempt 3/3): Already connected to a voice channel.
+2025-09-15 23:48:36,577 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 23:48:36,663 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 23:48:36,664 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 23:48:36,665 - discord.client - INFO - logging in using static token
+2025-09-15 23:48:38,586 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 211d7b17f73c55f203b548e3414e19bc).
+2025-09-15 23:48:40,621 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 23:48:40,621 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 23:48:40,621 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 23:48:40,624 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 23:48:40,624 - __main__ - INFO - Enhanced cleanup task started
+2025-09-15 23:49:05,172 - discord.voice_client - INFO - Connecting to voice...
+2025-09-15 23:49:05,172 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-15 23:49:05,887 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin02-68b35902.discord.media
+2025-09-15 23:49:06,183 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:49:07,185 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257213048782910 (Guild ID 1353257210855166022)
+2025-09-15 23:49:07,185 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 2)
+2025-09-15 23:49:08,141 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin02-68b35902.discord.media
+2025-09-15 23:49:08,393 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:49:11,395 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257213048782910 (Guild ID 1353257210855166022)
+2025-09-15 23:49:11,395 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 3)
+2025-09-15 23:49:12,411 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin02-68b35902.discord.media
+2025-09-15 23:49:12,665 - asyncio - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-sin02-68b35902.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-09-15 23:49:12,664 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:49:17,666 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257213048782910 (Guild ID 1353257210855166022)
+2025-09-15 23:49:17,667 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 4)
+2025-09-15 23:49:18,612 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin02-68b35902.discord.media
+2025-09-15 23:49:18,871 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:49:25,875 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257213048782910 (Guild ID 1353257210855166022)
+2025-09-15 23:49:25,875 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 5)
+2025-09-15 23:49:27,350 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin02-68b35902.discord.media
+2025-09-15 23:49:27,605 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-15 23:49:44,691 - __main__ - INFO - Spotify API initialized successfully
+2025-09-15 23:49:44,789 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-15 23:49:44,790 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-15 23:49:44,791 - discord.client - INFO - logging in using static token
+2025-09-15 23:49:46,375 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: c90948aaa8d2f797d4b1193a3c4bcd98).
+2025-09-15 23:49:48,385 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-15 23:49:48,385 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-15 23:49:48,385 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-15 23:49:48,387 - __main__ - INFO - ✅ Opus library loaded successfully - voice audio ready!
+2025-09-15 23:49:48,387 - __main__ - INFO - Enhanced cleanup task started
+2025-09-16 02:10:23,074 - discord.voice_client - INFO - Connecting to voice...
+2025-09-16 02:10:23,086 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-16 02:10:23,791 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin08-3cc74245.discord.media
+2025-09-16 02:10:24,064 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-16 02:10:25,076 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257213048782915 (Guild ID 1353257210855166022)
+2025-09-16 02:10:25,077 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 2)
+2025-09-16 02:10:26,084 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin08-3cc74245.discord.media
+2025-09-16 02:10:26,341 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-16 02:10:29,343 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257213048782915 (Guild ID 1353257210855166022)
+2025-09-16 02:10:29,344 - discord.voice_client - INFO - Starting voice handshake... (connection attempt 3)
+2025-09-16 02:10:30,308 - discord.voice_client - INFO - Voice handshake complete. Endpoint found c-sin08-3cc74245.discord.media
+2025-09-16 02:10:30,576 - asyncio - ERROR - Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-sin08-3cc74245.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2025-09-16 02:10:30,576 - discord.voice_client - ERROR - Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2025-09-16 02:10:33,117 - discord.voice_client - INFO - The voice handshake is being terminated for Channel ID 1353257213048782915 (Guild ID 1353257210855166022)
+2025-09-16 02:16:35,727 - __main__ - WARNING - Spotify credentials not found, Spotify features disabled
+2025-09-16 02:16:35,823 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-16 02:16:35,825 - __main__ - ERROR - DISCORD_TOKEN not found in environment variables!
+2025-09-19 00:53:48,158 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 00:53:48,409 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 00:53:48,412 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 00:53:48,418 - discord.client - INFO - logging in using static token
+2025-09-19 00:53:50,195 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 34dc1d2426c6b42a04a69f0793c14b00).
+2025-09-19 00:53:52,231 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 00:53:52,232 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 00:53:52,235 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 00:53:52,647 - __main__ - ERROR - Install with: apt install libopus0 && pip install pynacl
+2025-09-19 00:53:52,647 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 01:18:53,232 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 01:18:53,410 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 01:18:53,413 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 01:18:53,416 - discord.client - INFO - logging in using static token
+2025-09-19 01:18:55,258 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: c8d22b5ac30c8e8a8b5e5809aa850993).
+2025-09-19 01:18:57,345 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 01:18:57,345 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 01:18:57,349 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 01:18:57,675 - __main__ - ERROR - Install with: apt install libopus0 && pip install pynacl
+2025-09-19 01:18:57,676 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 01:21:32,299 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 01:21:32,489 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 01:21:32,490 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 01:21:32,495 - discord.client - INFO - logging in using static token
+2025-09-19 01:21:34,627 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: c000e253a0ea4225a4da01c74651bed4).
+2025-09-19 01:21:36,643 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 01:21:36,644 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 01:21:36,647 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 01:21:36,687 - __main__ - ERROR - Install with: apt install libopus0 && pip install pynacl
+2025-09-19 01:21:36,687 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 01:35:55,068 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 01:35:55,312 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 01:35:55,314 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 01:35:55,317 - discord.client - INFO - logging in using static token
+2025-09-19 01:35:57,188 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 9f0c9882d00450c987aebb736e0ff2d4).
+2025-09-19 01:35:59,214 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 01:35:59,214 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 01:35:59,214 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 01:35:59,301 - __main__ - ERROR - Install with: apt install libopus0 && pip install pynacl
+2025-09-19 01:35:59,303 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 01:36:34,855 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 01:36:35,055 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 01:36:35,058 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 01:36:35,062 - discord.client - INFO - logging in using static token
+2025-09-19 01:36:36,650 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: f07831e62ba784feb069f7365094985e).
+2025-09-19 01:36:38,673 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 01:36:38,675 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 01:36:38,677 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 01:36:38,700 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 01:36:57,147 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 01:36:57,147 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 01:36:57,643 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11051.discord.media:443
+2025-09-19 01:36:57,897 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 01:38:36,621 - __main__ - INFO - Song finished: Unknown
+2025-09-19 01:38:36,678 - discord.player - INFO - ffmpeg process 24604 has not terminated. Waiting to terminate...
+2025-09-19 01:38:36,699 - discord.player - INFO - ffmpeg process 24604 should have terminated with a return code of 1.
+2025-09-19 01:38:43,644 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1353257213048782915 (Guild ID 1353257210855166022)
+2025-09-19 01:41:07,661 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 01:41:07,840 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 01:41:07,842 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 01:41:07,845 - discord.client - INFO - logging in using static token
+2025-09-19 01:41:09,945 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 0f16a04a9b00424128a4b57d8c5702f7).
+2025-09-19 01:41:11,971 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 01:41:11,972 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 01:41:11,975 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 01:41:12,000 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 01:41:30,537 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 01:41:30,539 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 01:41:31,704 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11051.discord.media:443
+2025-09-19 01:41:31,918 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 01:41:44,716 - __main__ - INFO - Playing: Coba Lagi
+2025-09-19 01:42:10,388 - __main__ - INFO - Autoplay enabled for guild 1353257210855166022
+2025-09-19 01:42:46,521 - __main__ - INFO - Song finished: Unknown
+2025-09-19 01:42:46,523 - discord.player - INFO - ffmpeg process 12676 has not terminated. Waiting to terminate...
+2025-09-19 01:42:46,542 - discord.player - INFO - ffmpeg process 12676 should have terminated with a return code of 1.
+2025-09-19 01:42:53,796 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1353257213048782915 (Guild ID 1353257210855166022)
+2025-09-19 01:43:35,480 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 01:43:35,480 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 01:43:35,995 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11121.discord.media:443
+2025-09-19 01:43:36,239 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 01:43:46,333 - __main__ - INFO - Playing: Cincin
+2025-09-19 01:47:33,299 - __main__ - INFO - Song finished: Cincin
+2025-09-19 01:47:33,299 - discord.player - INFO - ffmpeg process 13976 has not terminated. Waiting to terminate...
+2025-09-19 01:47:33,299 - __main__ - INFO - Playing: Coba Lagi
+2025-09-19 01:47:33,331 - discord.player - INFO - ffmpeg process 13976 should have terminated with a return code of 1.
+2025-09-19 01:50:08,600 - __main__ - INFO - Song finished: Coba Lagi
+2025-09-19 01:50:08,604 - discord.player - INFO - ffmpeg process 4028 successfully terminated with return code of 0.
+2025-09-19 01:50:08,606 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Coba Lagi
+2025-09-19 01:50:08,806 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '3fvChw7Tq2BISRtwjUy6cy'} returned 404 due to None
+2025-09-19 01:50:08,808 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code: -1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=3fvChw7Tq2BISRtwjUy6cy:
+ None, reason: None
+2025-09-19 01:50:23,837 - __main__ - WARNING - YouTube autoplay search failed for 'Tenxi popular songs': 
+2025-09-19 01:50:38,886 - __main__ - WARNING - YouTube autoplay search failed for 'Tenxi best hits': 
+2025-09-19 01:50:53,945 - __main__ - WARNING - YouTube autoplay search failed for 'songs like Coba Lagi': 
+2025-09-19 01:51:08,990 - __main__ - WARNING - YouTube autoplay search failed for 'Tenxi similar music': 
+2025-09-19 01:51:19,840 - __main__ - WARNING - YouTube autoplay search failed for 'musik Tenxi': [0;31mERROR:[0m [youtube] N7LpNIDCyCA: Requested format is not available. Use --list-formats for a list of available formats
+2025-09-19 01:51:19,856 - __main__ - INFO - Generated 0 autoplay recommendations
+2025-09-19 01:51:19,873 - __main__ - WARNING - Autoplay failed to find recommendations (failure 1/3)
+2025-09-19 01:53:51,987 - __main__ - INFO - Playing: Tak Apa Bila Tak Happy
+2025-09-19 01:54:08,560 - __main__ - INFO - Song finished: Tak Apa Bila Tak Happy
+2025-09-19 01:54:08,612 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Tak Apa Bila Tak Happy
+2025-09-19 01:54:08,614 - discord.player - INFO - ffmpeg process 3024 successfully terminated with return code of 3436169992.
+2025-09-19 01:54:09,178 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '4IqAmC8vCpC09cE3OpE5oR'} returned 404 due to None
+2025-09-19 01:54:09,252 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code: -1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=4IqAmC8vCpC09cE3OpE5oR:
+ None, reason: None
+2025-09-19 01:54:57,527 - __main__ - WARNING - YouTube autoplay search failed for 'songs like Tak Apa Bila Tak Happy': 
+2025-09-19 01:55:33,572 - __main__ - INFO - Generated 0 autoplay recommendations
+2025-09-19 01:55:33,650 - __main__ - WARNING - Autoplay failed to find recommendations (failure 2/3)
+2025-09-19 01:59:29,349 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1418306323153551481 (Guild ID 1353257210855166022)
+2025-09-19 01:59:51,707 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 01:59:51,892 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 01:59:51,894 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 01:59:51,950 - discord.client - INFO - logging in using static token
+2025-09-19 01:59:53,537 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 84110481482dbb584b71e954049413ef).
+2025-09-19 01:59:55,566 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 01:59:55,567 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 01:59:55,569 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 01:59:55,652 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 02:00:20,436 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 02:00:20,437 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 02:00:20,905 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11121.discord.media:443
+2025-09-19 02:00:21,143 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 02:00:34,962 - __main__ - INFO - Playing: Kasih Aba Aba
+2025-09-19 02:00:58,301 - __main__ - INFO - Autoplay enabled for guild 1353257210855166022
+2025-09-19 02:04:04,308 - __main__ - INFO - Song finished: Kasih Aba Aba
+2025-09-19 02:04:04,309 - discord.player - INFO - ffmpeg process 7968 successfully terminated with return code of 0.
+2025-09-19 02:04:04,309 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Kasih Aba Aba
+2025-09-19 02:04:04,498 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '7qSFfihKxLoAfuX2H4XgDi'} returned 404 due to None
+2025-09-19 02:04:04,499 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code: -1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=7qSFfihKxLoAfuX2H4XgDi:
+ None, reason: None
+2025-09-19 02:04:24,339 - __main__ - WARNING - Spotify autoplay timeout
+2025-09-19 02:04:33,551 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-19 02:04:34,103 - __main__ - INFO - Playing: Rindu Aku Rindu Kamu
+2025-09-19 02:08:34,554 - __main__ - INFO - Song finished: Rindu Aku Rindu Kamu
+2025-09-19 02:08:34,555 - discord.player - INFO - ffmpeg process 7156 successfully terminated with return code of 0.
+2025-09-19 02:08:34,555 - __main__ - INFO - Playing: Pica Pica - Remix
+2025-09-19 02:10:09,936 - __main__ - INFO - Song finished: Unknown
+2025-09-19 02:10:09,937 - discord.player - INFO - ffmpeg process 24604 has not terminated. Waiting to terminate...
+2025-09-19 02:10:09,937 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Rindu Aku Rindu Kamu
+2025-09-19 02:10:09,947 - discord.player - INFO - ffmpeg process 24604 should have terminated with a return code of 1.
+2025-09-19 02:10:10,195 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '3MRxJZdi2lCbjB1k7LohW8'} returned 404 due to None
+2025-09-19 02:10:10,197 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code: -1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=3MRxJZdi2lCbjB1k7LohW8:
+ None, reason: None
+2025-09-19 02:10:20,704 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1418306323153551481 (Guild ID 1353257210855166022)
+2025-09-19 02:12:25,655 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 02:12:25,777 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 02:12:25,779 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 02:12:25,783 - discord.client - INFO - logging in using static token
+2025-09-19 02:12:27,559 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 6ab9e8d7226da2e1f5a8b6018e808749).
+2025-09-19 02:12:29,579 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 02:12:29,579 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 02:12:29,583 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 02:12:29,609 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 02:12:56,226 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 02:12:56,226 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 02:12:57,359 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11121.discord.media:443
+2025-09-19 02:12:57,605 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 02:13:06,371 - __main__ - ERROR - Play command error: name 'play_next_song' is not defined
+2025-09-19 02:13:41,994 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1418306323153551481 (Guild ID 1353257210855166022)
+2025-09-19 02:13:45,934 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 02:13:46,149 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 02:13:46,152 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 02:13:46,154 - discord.client - INFO - logging in using static token
+2025-09-19 02:13:47,933 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: b23127204ed7c2d78d84fe16d76bc7e4).
+2025-09-19 02:13:49,957 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 02:13:49,957 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 02:13:49,959 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 02:13:49,974 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 02:14:06,036 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 02:14:06,037 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 02:14:06,518 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11121.discord.media:443
+2025-09-19 02:14:06,706 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 02:14:15,944 - __main__ - INFO - Playing: introvert
+2025-09-19 02:17:02,927 - __main__ - INFO - Song finished: introvert
+2025-09-19 02:17:02,928 - discord.player - INFO - ffmpeg process 19240 successfully terminated with return code of 0.
+2025-09-19 02:18:54,652 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1418306323153551481 (Guild ID 1353257210855166022)
+2025-09-19 02:18:58,474 - __main__ - INFO - Spotify API initialized successfully
+2025-09-19 02:18:58,602 - __main__ - INFO - YouTube-DL initialized successfully
+2025-09-19 02:18:58,607 - __main__ - INFO - Starting Enhanced Discord Music Bot...
+2025-09-19 02:18:58,609 - discord.client - INFO - logging in using static token
+2025-09-19 02:19:00,089 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 1ccd914f93943a066e166a9407b098bb).
+2025-09-19 02:19:02,104 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 02:19:02,105 - __main__ - INFO - Bot is ready to serve music in 1 servers!
+2025-09-19 02:19:02,107 - __main__ - INFO - FFmpeg found and ready for audio processing
+2025-09-19 02:19:02,117 - __main__ - INFO - Enhanced cleanup task started
+2025-09-19 02:19:23,514 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 02:19:23,514 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 02:19:23,990 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11121.discord.media:443
+2025-09-19 02:19:24,241 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 02:19:34,161 - __main__ - INFO - Playing: Aku Ingin Kita Berpisah
+2025-09-19 02:19:42,302 - __main__ - INFO - Autoplay enabled for guild 1353257210855166022
+2025-09-19 02:23:31,780 - __main__ - INFO - Song finished: Aku Ingin Kita Berpisah
+2025-09-19 02:23:31,783 - discord.player - INFO - ffmpeg process 11924 successfully terminated with return code of 0.
+2025-09-19 02:23:31,783 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Aku Ingin Kita Berpisah
+2025-09-19 02:23:31,989 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '2WhvrIwjGlNQlDd4s8n0IP'} returned 404 due to None
+2025-09-19 02:23:31,990 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code: -1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=2WhvrIwjGlNQlDd4s8n0IP:
+ None, reason: None
+2025-09-19 02:23:38,648 - __main__ - INFO - Added artist top track: candu (162s)
+2025-09-19 02:23:45,180 - __main__ - INFO - Added artist top track: Rahasia (173s)
+2025-09-19 02:23:51,534 - __main__ - INFO - Added artist top track: Asal Kamu Bahagia (190s)
+2025-09-19 02:23:51,535 - __main__ - INFO - Generated 3 autoplay recommendations
+2025-09-19 02:23:52,232 - __main__ - INFO - Playing: candu
+2025-09-19 02:27:01,913 - __main__ - INFO - Song finished: candu
+2025-09-19 02:27:01,914 - discord.player - INFO - ffmpeg process 11468 successfully terminated with return code of 0.
+2025-09-19 02:27:01,914 - __main__ - INFO - Playing: Rahasia
+2025-09-19 02:28:40,597 - __main__ - INFO - Song finished: Rahasia
+2025-09-19 02:28:40,599 - discord.player - INFO - ffmpeg process 4000 has not terminated. Waiting to terminate...
+2025-09-19 02:28:40,599 - __main__ - INFO - Playing: Asal Kamu Bahagia
+2025-09-19 02:28:40,612 - discord.player - INFO - ffmpeg process 4000 should have terminated with a return code of 1.
+2025-09-19 02:29:57,529 - __main__ - INFO - Song finished: Unknown
+2025-09-19 02:29:57,531 - __main__ - INFO - Autoplay triggered, finding recommendations based on: Rahasia
+2025-09-19 02:29:57,531 - discord.player - INFO - ffmpeg process 11556 has not terminated. Waiting to terminate...
+2025-09-19 02:29:57,543 - discord.player - INFO - ffmpeg process 11556 should have terminated with a return code of 1.
+2025-09-19 02:29:57,716 - spotipy.client - ERROR - HTTP Error for GET to https://api.spotify.com/v1/recommendations with Params: {'limit': 3, 'seed_tracks': '6NOHRW7S3MY3Z7PLuNrSAA'} returned 404 due to None
+2025-09-19 02:29:57,717 - __main__ - WARNING - Spotify recommendations failed: http status: 404, code: -1 - https://api.spotify.com/v1/recommendations?limit=3&seed_tracks=6NOHRW7S3MY3Z7PLuNrSAA:
+ None, reason: None
+2025-09-19 02:30:00,217 - discord.voice_state - INFO - The voice handshake is being terminated for Channel ID 1418306323153551481 (Guild ID 1353257210855166022)
+2025-09-19 02:30:05,028 - __main__ - INFO - Added artist top track: High Enough - RAC Remix (208s)
+2025-09-19 02:30:14,878 - __main__ - INFO - Opus loaded successfully
+2025-09-19 02:30:14,880 - __main__ - INFO - Spotify API initialized
+2025-09-19 02:30:15,005 - __main__ - INFO - YouTube-DL initialized
+2025-09-19 02:30:15,007 - __main__ - INFO - Starting Discord Music Bot...
+2025-09-19 02:30:15,011 - discord.client - INFO - logging in using static token
+2025-09-19 02:30:16,760 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 669eb2e3efa83ded6b46ae4e1f73849e).
+2025-09-19 02:30:18,779 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 02:30:18,780 - __main__ - INFO - Bot ready in 1 servers!
+2025-09-19 02:30:18,782 - __main__ - INFO - FFmpeg ready
+2025-09-19 02:30:42,890 - discord.voice_state - INFO - Connecting to voice...
+2025-09-19 02:30:42,891 - discord.voice_state - INFO - Starting voice handshake... (connection attempt 1)
+2025-09-19 02:30:43,384 - discord.voice_state - INFO - Voice handshake complete. Endpoint found: singapore11121.discord.media:443
+2025-09-19 02:30:43,636 - discord.voice_state - INFO - Voice connection complete.
+2025-09-19 02:35:21,731 - discord.player - INFO - ffmpeg process 9104 successfully terminated with return code of 0.
+2025-09-19 02:39:13,908 - discord.player - INFO - ffmpeg process 24096 successfully terminated with return code of 0.
+2025-09-19 02:45:26,894 - discord.player - INFO - ffmpeg process 24456 successfully terminated with return code of 0.
+2025-09-19 02:50:24,716 - __main__ - INFO - Opus loaded successfully
+2025-09-19 02:50:24,717 - __main__ - INFO - Spotify API initialized
+2025-09-19 02:50:24,828 - __main__ - INFO - YouTube-DL initialized
+2025-09-19 02:50:24,832 - __main__ - INFO - Starting Discord Music Bot...
+2025-09-19 02:50:24,833 - discord.client - INFO - logging in using static token
+2025-09-19 02:50:26,643 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: b4298ba96c962859ea8b6dea964b1fd7).
+2025-09-19 02:50:28,664 - __main__ - INFO - Cleo_Music#3604 has connected to Discord!
+2025-09-19 02:50:28,664 - __main__ - INFO - Bot ready in 1 servers!
+2025-09-19 02:50:28,666 - __main__ - INFO - FFmpeg ready
