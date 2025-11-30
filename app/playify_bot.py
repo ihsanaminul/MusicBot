@@ -2635,7 +2635,7 @@ def run_bot(status_queue, log_queue, command_queue):
                     description=get_messages("controller_idle_description", guild_id),
                     color=0x36393F
                 )
-            embed.set_image(url="https://i.imgur.com/vDusBWD.png")
+            embed.set_image(url="https://image2url.com/images/1764519755428-cad6bced-fa34-4c61-9d01-4fb741893f6e.png")
             embed.set_footer(text="Playify Controller System")
             return embed
 
