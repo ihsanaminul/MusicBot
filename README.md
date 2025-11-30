@@ -1,7 +1,7 @@
 <h1 align="center">🎵 Cleo Musik ♪(｡◕‿◕｡)</h1>
 
 <p align="center">
-  <img src="https://i.pinimg.com/736x/b1/ab/7d/b1ab7d7b4785d88b5c31a6507669b7cd.jpg" alt="Playify Banner" >
+  <img src="https://i.pinimg.com/736x/c8/10/99/c81099a28532cbde421b62cf95a124b2.jpg" alt="Playify Banner" weight="600">
 </p>
 
 ---
