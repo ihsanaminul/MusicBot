@@ -1,7 +1,5 @@
 <h1 align="center">🎵 Cleo Musik ♪(｡◕‿◕｡)</h1>
 
----
-
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python 3.9+" />
   <a href="https://discord.com/oauth2/authorize?client_id=1416435130402082909&permissions=36785216&integration_type=0&scope=bot+applications.commands"><img src="https://img.shields.io/discord/1395755097350213632?label=Discord%20Server&logo=discord" alt="Discord Server" /></a>
