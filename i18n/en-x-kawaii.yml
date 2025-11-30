@@ -1,0 +1,463 @@
+# ==============================================================================
+# 1. GENERAL ERRORS & NOTIFICATIONS
+# ==============================================================================
+error:
+  no_voice_channel: "(>ω<) You must be in a voice channel!"
+  connection: "(╥﹏╥) I couldn't connect..."
+  connection_title: "I couldn't connect... (´；ω；`)"
+  extraction: "(ﾉ><)ﾉ I couldn't add that one!"
+  playback_failed:
+    title: "Oh noes, it didn't play..."
+  generic_access:
+    title: "Access Denied! (・`m´・)"
+    description: "A big wall is blocking me from this video! I can't get through ＞︿＜ ..."
+  age_restricted:
+    title: "Video for Grown-ups! (/ />/ ᗨ /</ /)"
+    description: "This video is for big kids only! I'm not old enough to watch it... (>_<)"
+  private:
+    title: "Secret Video! (・-・)"
+    description: "This video is a super secret! I'm not on the guest list... ( T-T)"
+  unavailable:
+    title: "Video went poof! (o.o)"
+    description: "Poof! This video has disappeared... I can't find it anywhere (＃°Д°)!"
+  youtube_blocked:
+    title: "(´• ω •`) YouTube is a No-Go!"
+    description: "Sowwy... I can't play YouTube links because of the big meanie Google... (｡•́︿•̀｡)\n\nBut you can give me my own little home with an easy Windows app I made for self-hosting! It's free and fun, and then YouTube works perfectly!~"
+    repo_field: "Find my home here! ♡"
+    repo_value: "GitHub repo: [alan-analyst/Playify](https://github.com/alan-analyst/Playify)\nCome grab the Windows setup app here:\n[Download Here](https://github.com/alan-analyst/Playify-Setup/releases/latest)"
+  critical:
+    title: "(╥﹏╥) Oh no! A critical error happened..."
+    description: "Something went wrong... (´；ω；`) Can you please tell the developers on GitHub so they can make me better?"
+    report_field: "How to Report"
+    report_value: "Please tell them what happened here:\n**https://github.com/alan-analyst/Playify/issues**\n\nDon't forget to send the little error message below!~"
+    details_field: "Error info (for the smart people!)"
+    footer: "Thank you for helping!~ (´• ω •`)"
+    details_format: "This song: {url}\nSaid this: {error_summary}"
+  generic:
+    affected_url_field: "The song that made a boo-boo:"
+  command:
+    fallback: "Oh noes, something happened: {error} (｡•́︿•̀｡)"
+
+# ==============================================================================
+# 2. COMMANDS & PERMISSIONS
+# ==============================================================================
+command:
+  error:
+    not_found: "I couldn't find the {command_name} command... (´• ω •`)"
+    user_only: "Only the one who asked can do this, sowwy! (>_<)"
+    guild_only: "This command can only be used inside a server!~"
+  restricted_title: "(>_<) Not here!"
+  restricted_description: "Aww... sowwy! {bot_name} can only listen for commands in special channels here... (｡•́︿•̀｡)"
+  allowed_channels_field: "Use me here!~"
+
+# ==============================================================================
+# 3. SETUP COMMANDS
+# ==============================================================================
+setup:
+  controller:
+    success: "Okay! The controller will live in {channel_mention} now!~ (´• ω •`)"
+  allowlist:
+    set_success: "Okay! I'll only listen in these channels now: {channels} (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+    reset_success: "Yay! I can listen everywhere again!~ (´• ω •`)"
+    invalid_args: "Silly! You have to tell me which channels to listen in, or tell me to `reset` to `default`!~ (>ω<)"
+
+# ==============================================================================
+# 4. PLAYER & MUSIC CORE
+# ==============================================================================
+player:
+  live_indicator: "(Live!~)"
+  unknown_title: "A Mysterious Song~"
+  unknown_artist: "A Secret Artist ･ﾟ✧"
+  unknown_file: "A Mysterious File~" # <-- CLÉ AJOUTÉE
+  invalid_track: "A Glitchy Song! (o.o)"
+  loading_placeholder: "Loading... (´• ω •`)"
+  a_song_fallback: "a song"
+  track_will_be_skipped: "I'll have to skip it, sowwy!"
+  no_playback:
+    title: "(・_・;) Nothing is playing right now..."
+  no_song:
+    title: "(´･ω･`) No music is playing right now..."
+  not_connected: "(￣ω￣;) I'm not connected..."
+  history:
+    empty: "There are no previous songs... (´• ω •`)"
+  previous:
+    success: "Going back to the last song!~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  play_files:
+    success:
+      title: "Files Added!~"
+      description: "**{count} file(s) are now in the queue!:**\n{file_list}"
+      footer_failed: "\n\n**{count} file(s) were ignored because they were shy... (invalid type).**"
+    error:
+      invalid_type: "That's not a song or video file! (>_<)"
+      save_failed: "I tried to save the file, but something went wrong... (´；ω；`)"
+      no_valid_files: "No valid audio or video files were added... (´• ω •`)"
+  play_next:
+    error:
+      invalid_args: "Silly! Pick a link/name OR a file, not both! (>ω<)"
+      playlist_unsupported: "I can't put a whole playlist next! Use `/play` for that, okay? (´• ω •`)"
+  reconnect:
+    success: "Reconnected! Let's continue the party~ ヽ(o^ ^o)ﾉ"
+    not_playing: "I can only do my magic reconnect trick when a song is playing! (´• ω •`)"
+    error:
+      generic: "Something went wrong when I tried to reconnect... (｡•́︿•̀｡)"
+  skip:
+    confirmation: "Skipped!~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+    queue_empty: "The queue is empty now... (´･ω･`)"
+    success:
+      jumped: "Zooooom! We jumped to track **#{number}**: `{title}` (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+    error:
+      invalid_number: "That's a silly number! It has to be between 1 and {queue_size}! (>_<)"
+  replay:
+    success_title: "Playing it again!~"
+    success_desc: "Let's listen to [{title}]({url}) one more time!~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  error:
+    add_failed: "I couldn't add the song you picked... sowwy (｡•́︿•̀｡)"
+
+# ==============================================================================
+# 5. GENERAL INTERFACE & MESSAGES
+# ==============================================================================
+kawaii_toggle: "Kawaii mode {state} for this server!"
+kawaii_state_enabled: "enabled (◕‿◕✿)"
+kawaii_state_disabled: "disabled (* ￣︿￣)"
+playlist_added: "☆*:.｡.o(≧▽≦)o.｡.:*☆ PLAYLIST ADDED!"
+playlist_description: "{count} songs have been added to the queue!~"
+song_added: "(๑•̀ㅂ•́)و✧ Added to Queue!~"
+search_error: "Sowwy, something went wrong... The video might be a secret or for grown-ups! (｡•́︿•̀｡)"
+clear_queue_success: "(≧▽≦) Queue cleared! ~"
+now_playing_title: "｡ﾟ･ Now Playing ･ﾟ｡"
+now_playing_description: "♪(´▽｀) [{title}]({url})"
+no_song_playing: "(´･ω･`) No music is playing right now..."
+pause: "(´･_･`) Music paused..."
+resume: "☆*:.｡.o(≧▽≦)o.｡.:*☆ Let's go again!"
+no_paused: "(´･ω･`) No music is paused..."
+loop: "Looping for the current song is {state}. <(￣︶￣)>"
+loop_state_enabled: "enabled (◕‿◕✿)"
+loop_state_disabled: "disabled (¨_°`)"
+stop: "(ﾉ´･ω･)ﾉ ﾐ ┸━┸ All stopped! Bye bye ~"
+shuffle_success: "(✿◕‿◕) Queue shuffled! Yay! ~"
+autoplay_toggle: "Autoplay is {state} (◕‿◕✿)"
+autoplay_state_enabled: "enabled"
+autoplay_state_disabled: "disabled"
+volume_success: "Volume set to **{level}%**!~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+play_next_added: "(っ◕‿◕)っ Added as next song"
+
+# ==============================================================================
+# 6. AUTOPLAY
+# ==============================================================================
+autoplay:
+  loading_title: "Autoplay Magic!~ c(ˊᗜˋ*c)"
+  loading_description: "{progress_bar}\nFinding a new song for you... {processed}/{total}"
+  finished_description: "Added **{count}** new songs! Let the party continue~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  file_notice: "The last song was a file! I can't find similar songs for that one... (´• ω •`) Looking through our playlist for another song to use!~"
+  direct_link_notice: "The last song was a direct link! I can't find similar songs for that one... (´• ω •`) Looking through our playlist for another song to use!~"
+
+# ==============================================================================
+# 7. QUEUE VIEW
+# ==============================================================================
+queue_title: "Queue (◕‿◕✿)"
+queue_description: "**{count} songs** in the queue! ~"
+queue_empty: "The queue is empty. (´･ω･`)"
+queue_last_song: "This is the last song!~ (´• ω •`)."
+queue_next: "Next songs are:"
+now_playing_in_queue: "Now Playing (ﾉ´ヮ`)ﾉ*: ･ﾟ"
+queue_page_footer: "Page {current_page}/{total_pages}  (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+queue_button:
+  next: "Next -->"
+  previous: "<-- Back"
+queue_status_title: "Status! (o･ω･)ﾉ"
+queue_status_none: "Just chillin' normally~"
+queue_status_loop: "**Loop (Song)**: On! (ﾉ´ヮ`)ﾉ*: ･ﾟ"
+queue_status_24_7: "**24/7 ({mode})**: Let's go! (づ｡◕‿‿◕｡)づ"
+queue_status_autoplay: "**Autoplay**: On!"
+queue_status_volume: "**Volume**: {level}%~"
+queue:
+  now_playing_format:
+    default: "[{title}]({url})"
+    file: "💿 `{title}`"
+  track_line:
+    full_format: "`{i}.` {display_line}\n"
+  and_more: "\n... and {remaining} more cute song(s)!~"
+
+# ==============================================================================
+# 8. 24/7 MODE
+# ==============================================================================
+"24_7":
+  not_active: "24/7 mode isn't on right now... (´･ω･`)"
+  off_title: "24/7 Radio OFF (；一_一)"
+  off_desc: "Bye-bye radio! I'll go back to napping when I'm alone~"
+  auto_title: "24/7 Auto Mode (b ᵔ▽ᵔ)b"
+  auto_desc: "Autoplay on! New similar songs will appear magically when the queue ends~"
+  normal_title: "24/7 Loop Mode (o･ω･o)"
+  normal_desc: "Playlist looping forever~ No new songs added! I'll just keep playing these for you~"
+  error:
+    empty_queue_normal: "The queue is empty! Add some songs before we loop forever~ (´• ω •`)"
+
+# ==============================================================================
+# 9. LYRICS & KARAOKE
+# ==============================================================================
+lyrics:
+  success:
+    found: "I found the lyrics!~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+    updated: "Lyrics updated! Yay! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  button:
+    previous: "⬅️ Before"
+    next: "After ➡️"
+    refine: "✏️ Let's try again!"
+  refine_modal:
+    title: "Find Lyrics Again!~"
+    label: "New Song Title & Artist!~"
+    placeholder: "e.g., Blinding Lights The Weeknd!~"
+  error:
+    not_found:
+      title: "૮( ´• ˕ •` )ა Lyrics not found..."
+      description: "I searched everywhere but I couldn't find the lyrics for **{query}** (｡•́︿•̀｡)\n\nTry searching just with the title, you can do it!~"
+    refine_failed: "Sowwy, I still couldn't find anything for **{query}**... (｡•́︿•̀｡)"
+  fallback_warning: "I couldn't find the singing-time lyrics... but I found these instead!~"
+  refine_button: "Try again! (o･ω･)ﾉ"
+  embed:
+    title: "(〃▽〃)つ✎ Lyrics for {title}!~"
+    footer: "Page {current_page}/{total_pages} (´• ω •`)"
+
+karaoke:
+  session_finished: "*Karaoke session finished!~ (´• ω •`)*"
+  embed:
+    title: "🎤 Karaoke for {title}!~"
+    description: "Starting karaoke... (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  error:
+    already_running: "Lyrics are already on screen, silly! (>ω<)"
+  warning:
+    title: "Karaoke Time! Just a little note~ (´• ω •`)"
+    description: "The timing of the lyrics (») does its best to be perfect, but sometimes it's a little shy! ପ(๑•ᴗ•๑)ଓ\n\n**Pro Tip:** For the bestest results, try adding `topic` or `audio` to your search, like `party addict kets4eki topic`!\n\nSmash that **Continue** button to begin~ <3"
+    button: "Continue (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+    acknowledged_button: "Okay!~ (´• ω •`)"
+  retry:
+    success: "Lyrics found! Starting karaoke..."
+  refine_modal:
+    title: "Find Synced Lyrics Again!~"
+    label: "Song Title & Artist!~"
+    placeholder: "e.g., Believer Imagine Dragons!~"
+  not_found_title: "૮( ´• ˕ •` )ა Synced Lyrics Not Found..."
+  not_found_description: "I looked everywhere but couldn't find the synced lyrics for **{query}** (｡•́︿•̀｡)\n\nYou can try again, or we can look for the normal lyrics on Genius together!~"
+  retry_button: "Try again! (o･ω･)ﾉ"
+  genius_fallback_button: "Find on Genius (づ｡◕‿‿◕｡)づ"
+  display:
+    waiting_for_first_line: "*(Waiting for the first line... get ready!~)*"
+
+# ==============================================================================
+# 10. INTERACTIVE COMPONENTS (MODALS, VIEWS)
+# ==============================================================================
+add_song_modal:
+  label: "Song Name or URL!~ (Spotify, YT, etc.)"
+  placeholder: "e.g., Blinding Lights or a playlist link!~"
+remove_title: "Remove Songs! (o･ω･)ﾉ"
+remove_description: "Pick the songs to say bye-bye to!~ ☆\nUse the buttons if you have lots and lots of songs!"
+remove_placeholder: "Which songs should go?~"
+remove_success_title: "Poof! {count} song(s) are gone!~"
+remove_processed: "*All done!~ (´• ω •`)*"
+remove_button:
+  previous: "⬅️ Before"
+  next: "After ➡️"
+search:
+  results_title: "I found these for you!~"
+  results_description: "Pick one, pick one! ( ´ ▽ ` )ﾉ"
+  placeholder: "Which one do you want?~"
+  selection_made: "*Okay! I added it!~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧*"
+  no_results: "Aww, I couldn't find anything for **{query}**... (｡•́︿•̀｡)"
+  added_to_queue_ephemeral: "(๑•̀ㅂ•́)و✧ Added to queue: {title}!~"
+  result_description: "by {artist} (´• ω •`)"
+seek:
+  fail_live: "Aww, we can't time travel in a live stream... (｡•́︿•̀｡)"
+  fail_invalid_time: "That time format is a bit silly... (>_<) Try something like `1:23`!"
+  interface_title: "Time Travel!~"
+  interface_footer: "This little window will go poof in 5 minutes!~"
+  interface:
+    loading_description: "Getting my time machine ready... (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  modal_title: "Where do we go?~"
+  modal:
+    label: "Enter a time! (like 1:23)~"
+    placeholder: "like 1:23 or 45!~"
+  button:
+    rewind: "<-- Go back!"
+    jump_to: "Pick a time..."
+    forward: "Zoom! -->"
+jumpto:
+  title: "Jump to a Song! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  description: "Pick a song from the list to jump to it!~ If you have many songs, use the buttons to navigate!"
+  placeholder: "Wanna jump to a song?~"
+
+# ==============================================================================
+# 11. FILTERS
+# ==============================================================================
+filter:
+  title: "Audio Filters! ヾ(≧▽≦*)o"
+  description: "Clicky clicky to change the sound! (b ᵔ▽ᵔ)b"
+  no_playback: "Nothing is playing... (´・ω・`)"
+  name:
+    none: "Normal~"
+    slowed: "Slowed (˘︶˘)"
+    spedup: "Sped Up (^_^)"
+    nightcore: "Nightcore (☆▽☆)"
+    reverb: "Reverb (✿)"
+    "8d": "8D Audio (♪)"
+    muffled: "Muffled (・・)"
+    bassboost: "Bass Boost (•̀ω•́)"
+    earrape: "Earrape (x_x)"
+
+# ==============================================================================
+# 12. MISC & SUPPORT COMMANDS
+# ==============================================================================
+discord_command_title: "Come hang out with us! （〃｀ 3′〃）"
+discord_command_description: "Join our super cute community! Just click the button below~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+discord_command_button: "Join Us! <3"
+status:
+  title: "My Dashboard!~ (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  description: "Here's how I'm feeling right now!~"
+  footer: "Data asked for by {user_display_name}!~"
+  not_applicable: "???"
+  bot:
+    title: "Me!~ 📊"
+    value: "**My ping:** {latency} ms\n**My friends:** {server_count} servers\n**Total friends:** {user_count} users\n**I've been awake for:** {uptime_string}"
+  music_player:
+    title: "Music!~ (︶▽︶)♫"
+    value: "**Active parties:** {active_players}\n**Songs waiting:** {total_queued_songs}\n**My singing helpers:** `{ffmpeg_processes}`\n**My short-term memory:** {url_cache_size}/{url_cache_max}"
+  host:
+    title: "My Home! 💻"
+    value: "**I live here:** {os_info}\n**My brain:** {cpu_load}% @ {cpu_freq_current:.0f}MHz\n**My memory:** {ram_used} / {ram_total} ({ram_percent}%)\n**My storage:** {disk_used} / {disk_total} ({disk_percent}%) (´• ω •`)"
+  environment:
+    title: "My Tools! ⚙️"
+    value: "**Magic Language:** v{python_version}\n**Chatting Library:** v{discord_py_version}\n**Music Finder:** v{yt_dlp_version}\n**My Brain Space:** {bot_ram_usage} (◕‿◕✿)"
+support:
+  guild_agnostic: "This command can be used inside any server!~"
+  title: "Support Me! ('/ />/ ᗨ /</ /)"
+  description: "I spend sooooo much time, day and night, making Playify super cute and fast for you, fixing all the little boo-boos! (´• ω •`) Your support helps me keep going! Every little bit makes me super duper happy and lets me make the bot even better!~"
+  patreon_title: "Be My Patron!~"
+  patreon_value: "[Be My Patron!~]({link})"
+  paypal_title: "One-Time Tip!~"
+  paypal_value: "[One-Time Tip!~]({link})"
+  discord_title: "Hang Out With Us!~"
+  discord_value: "[Hang Out With Us!~]({link})"
+  contact_title: "Talk to Me!~"
+  contact_value: "You can talk to me on Discord!~\n**{username}**"
+  footer: "Your support makes me so happy!~ (´• ω •`)"
+
+# ==============================================================================
+# 13. PLATFORM SPECIFIC
+# ==============================================================================
+platform:
+  display:
+    spotify: "Spotify 🟢"
+    deezer: "Deezer 🎵"
+    apple_music: "Apple Music 🍎"
+    tidal: "Tidal 🌊"
+    amazon_music: "Amazon Music 📦"
+    soundcloud: "SoundCloud ☁️"
+    youtube: "YouTube ▶️"
+    twitch: "Twitch 🟣"
+  kaomoji:
+    spotify: "Spotify ヾ(⌐■_■)ノ♪"
+    deezer: "Deezer (つ◕_◕)つ"
+    apple_music: "Apple Music (≧◡≦)"
+    tidal: "Tidal (〜￣▽￣)〜"
+    amazon_music: "Amazon Music (b ᵔ▽ᵔ)b"
+    soundcloud: "SoundCloud (ˊᵒ̴̶̷̤ ꇴ ᵒ̴̶̷̤ˋ)"
+    youtube: "YouTube (►_◄)"
+    twitch: "Twitch (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+spotify_playlist_added: "☆*:.｡.o(≧▽≦)o.｡.:*☆ SPOTIFY PLAYLIST"
+spotify_playlist_description: "**{count} songs** from Spotify are now in the queue!~"
+spotify_error_title: "(´；ω；`) Spotify Error"
+spotify_error_description_detailed: "Oh no! I couldn't get the songs from this Spotify link... Maybe... it's a secret playlist, or it ran away! My backup magic didn't work either..."
+spotify_error: "Something went wrong with Spotify... (｡•́︿•̀｡)"
+deezer_playlist_added: "☆*:.｡.o(≧▽≦)o.｡.:*☆ DEEZER PLAYLIST"
+deezer_playlist_description: "**{count} songs** from Deezer are now in the queue!~"
+deezer_error: "Oh no! Problem with the Deezer link... maybe it's shy or hidden?"
+apple_music_playlist_added: "☆*:.｡.o(≧▽≦)o.｡.:*☆ APPLE MUSIC PLAYLIST"
+apple_music_playlist_description: "**{count} songs** from Apple Music are now in the queue!~"
+apple_music_error: "Oh no! Problem with the Apple Music link... maybe it's shy or hidden?"
+tidal_playlist_added: "☆*:.｡.o(≧▽≦)o.｡.:*☆ TIDAL PLAYLIST"
+tidal_playlist_description: "**{count} songs** from Tidal are now in the queue!~"
+tidal_error: "Oh no! Problem with the Tidal link... maybe it's shy or hidden?"
+amazon_music_playlist_added: "☆*:.｡.o(≧▽≦)o.｡.:*☆ AMAZON MUSIC PLAYLIST"
+amazon_music_playlist_description: "**{count} songs** from Amazon Music are now in the queue!~"
+amazon_music_error: "Oh no! Problem with the Amazon Music link... maybe it's shy or hidden?"
+lazy_resolve:
+  error:
+    title: "Poof! It's Gone... (o.o)"
+    description: "I couldn't find a source for: `{title}`... (｡•́︿•̀｡)\n*I'll have to skip it, sowwy!*"
+api:
+  genius:
+    not_configured: "The Genius API isn't set up... I can't find lyrics without it! (｡•́︿•̀｡)"
+  spotify:
+    unreachable: "Oh noes! Spotify is sleeping... I can't wake it up! (z z Z)"
+  deezer:
+    network_error: "The Deezer bird flew away... I couldn't get the data! Try again? (・_・?)"
+    value_error: "Oopsie: {error_message}"
+  lyrics:
+    generic_fetch_error: "Something went poof when I tried to get the lyrics... (´；ω；`)"
+
+# ==============================================================================
+# 14. MUSIC CONTROLLER
+# ==============================================================================
+controller:
+  title: "Music Controller (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  idle:
+    description: "Waiting for music... (o･ω･)ﾉ\nUse `/play` or the button below to start the party!~"
+    not_connected: "I'm not in a voice channel... (｡•́︿•̀｡)\nJoin one and use `/play` to invite me!~"
+  next_up:
+    title: "Next up! (* ^ ω ^)"
+    format:
+      default: "[{title}]({url}) - `{duration}`"
+      file: "💿 `{title}` - `{duration}`"
+      lazy: "`{title}`"
+  now_playing:
+    title: "Now Playing (ﾉ´ヮ`)ﾉ*: ･ﾟ"
+    value: "{now_playing_title_display}\n> 🎤 **{artist}**\n\nAsked by: {requester_mention}\nI'm in: 🔊 | {channel_name}"
+  nothing_next:
+    title: "Nothing next... (´･ω･`)"
+  no_other_songs:
+    title: "No other songs in the queue... (｡•́︿•̀｡)"
+  queue_empty:
+    title: "The queue is all empty! (´・ω・`)"
+  queue_list:
+    line_format:
+      default: "`{i}.` {display_line}\n"
+  queue:
+    line_display:
+      default: "[{title}]({url})"
+      file: "💿 `{title}`"
+      lazy: "`{title}`"
+  footer:
+    idle: "Playify Controller!~ (´• ω •`)"
+    format: "{count} songs | {dynamic_info} | Vol: {volume}% (´• ω •`)"
+    format_last_song: "Last song!~ | {dynamic_info} | Vol: {volume}% (´• ω •`)"
+    source: "Source: {platform}"
+    filter: "Filter: {filter_name} ･ﾟ✧"
+    ping: "Ping: {ping_ms}ms!~"
+    file_source: "Source: Local File (`•ω•´)"
+    bandcamp_source: "Source: Bandcamp (ﾉ$ヮ$)ﾉ"
+    youtube_source: "Source: YouTube (►_◄)"
+    soundcloud_source: "Source: SoundCloud (ˊᵒ̴̶̷̤ ꇴ ᵒ̴̶̷̤ˋ)"
+    twitch_source: "Source: Twitch (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧"
+  label:
+    previous: "Previous (.<.)"
+    pause: "Pause (-.-)"
+    resume: "Resume (>.<)"
+    skip: "Skip (.>.)"
+    stop: "Stop (x.x)"
+    add_song: "Add Song (+.+)"
+    shuffle: "Shuffle (?.?)"
+    loop: "Loop o.o"
+    autoplay: "Autoplay ->"
+    lyrics: "Lyrics v.v"
+    karaoke: "Karaoke (*o*)"
+    queue: "Show Queue ._."
+    jump_to: "Jump to... ⤷"
+    vol_down: "Vol-"
+    vol_up: "Vol+"
+
+# ==============================================================================
+# 15. BOT PRESENCE / STATUS
+# ==============================================================================
+presence:
+  listening_volume: "/volume !~"
+  listening_play: "/play [link] !~"
+  playing_servers: "{count} cute servers!~"

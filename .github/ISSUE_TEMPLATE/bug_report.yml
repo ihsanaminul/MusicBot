@@ -1,0 +1,78 @@
+# .github/ISSUE_TEMPLATE/bug_report.yml
+
+name: "🐛 Bug Report"
+description: "Report a bug to help improve Playify."
+title: "[BUG] - "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        Detailed information will help us resolve the issue faster.
+
+  - type: dropdown
+    id: command
+    attributes:
+      label: "Which command caused the bug?"
+      description: "Select the command you were using when the issue occurred."
+      options:
+        - /play
+        - /playnext
+        - /lyrics
+        - /karaoke
+        - /filter
+        - /stop
+        - /skip
+        - /queue
+        - Other command
+    validations:
+      required: true
+
+  - type: input
+    id: query
+    attributes:
+      label: "Link or Query Used"
+      description: "Paste the exact link (YouTube, Spotify, etc.) or search query you used. This is crucial for reproducing the bug!"
+      placeholder: "Ex: https://www.youtube.com/watch?v=... or 'Daft Punk - Around the World'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description"
+      description: "Please provide a clear and concise description of what happened. What did you expect to happen? What happened instead?"
+      placeholder: "I used the /play command with a Spotify link, the bot failed to add any songs and displayed an error..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "📋 Bot Error Logs"
+      description: |
+        If the bot displayed an error message with a code block, please copy and paste it here.
+        This is the most important piece of information!
+      placeholder: |
+        ```
+        [youtube] ...: Video unavailable
+        ...
+        ```
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: status
+    attributes:
+      label: "⚙️ Output of the /status command (very helpful!)"
+      description: "Please run the `/status` command in your server and paste the result here. This gives us valuable information about the bot's version and its environment."
+      placeholder: "Copy and paste the embed from the /status command here."
+      render: shell
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "Thanks for helping make Playify better! ✨"
