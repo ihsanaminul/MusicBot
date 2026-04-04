@@ -18,7 +18,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from spotify_scraper import SpotifyClient
 from spotify_scraper.core.exceptions import SpotifyScraperError
 import random
-from urllib.parse import urlparse, parse_qs, quote_plus
+from urllib.parse import urlparse, parse_qs
 from cachetools import TTLCache
 import logging
 import requests
@@ -30,7 +30,6 @@ import time
 import syncedlyrics
 import lyricsgenius
 import psutil
-import time
 import datetime
 import platform
 import sys
@@ -39,9 +38,7 @@ import traceback # --- NEW --- To format exceptions
 import os
 import shutil
 import subprocess
-import shlex
 import sqlite3
-import nacl
 from queue import Empty
 from dotenv import load_dotenv
 

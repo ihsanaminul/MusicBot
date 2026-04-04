@@ -302,6 +302,8 @@ filter:
     muffled: "Muffled"
     bassboost: "Bass Boost"
     earrape: "Earrape"
+    distant: "Distant"
+    iem: "IEM Simulation"
 
 # ==============================================================================
 # 12. MISC & SUPPORT COMMANDS
@@ -416,7 +418,7 @@ controller:
       lazy: "`{title}`"
   now_playing:
     title: "Now Playing:"
-    value: "{now_playing_title_display}\n> 🎤 **{artist}**\n\nRequested by: {requester_mention}\nConnected in: 🔊 | {channel_name}"
+    value: "{now_playing_title_display}\n> 🎤 **{artist}**\n\nRequested by: {requester_mention}\nConnected in:  {channel_name}"
   nothing_next:
     title: "Nothing next"
   no_other_songs:

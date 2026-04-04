@@ -8,14 +8,16 @@ import time
 import webbrowser
 import threading
 import pystray
-import nacl
 import winreg as reg
-from PIL import ImageTk, Image, ImageDraw
+from PIL import ImageTk, Image
 import subprocess
 import requests
 import tempfile
 import socket
 from packaging.version import parse as parse_version
+import base64
+import hashlib
+import secrets
 
 # OpenCV is used for video playback in the tutorial
 import cv2
@@ -36,6 +38,57 @@ APP_DATA_DIR = os.path.join(os.getenv('LOCALAPPDATA'), APP_NAME)
 os.makedirs(APP_DATA_DIR, exist_ok=True)
 
 CONFIG_FILE = os.path.join(APP_DATA_DIR, "playify_config.env")
+
+# --- Encryption Utilities for Secure Credential Storage ---
+def _get_encryption_key():
+    """Derive a deterministic encryption key from the machine."""
+    machine_id = os.getenv("COMPUTERNAME", "playify")
+    return hashlib.pbkdf2_hmac("sha256", machine_id.encode(), b"playify_salt", 100000)[:32]
+
+def _encrypt_credential(value: str) -> str:
+    """Encrypt a credential using Fernet-style encryption (base64-encoded)."""
+    if not value:
+        return ""
+    try:
+        from cryptography.fernet import Fernet
+        key = _get_encryption_key()
+        f = Fernet(base64.urlsafe_b64encode(key))
+        encrypted = f.encrypt(value.encode())
+        return f"ENC:{base64.b64encode(encrypted).decode()}"
+    except ImportError:
+        # Fallback: simple XOR with salt
+        salt = secrets.token_hex(8)
+        xored = bytes([ord(c) ^ ord(salt[i % len(salt)]) for i, c in enumerate(value)])
+        return f"XOR:{salt}:{base64.b64encode(xored).decode()}"
+
+def _decrypt_credential(value: str) -> str:
+    """Decrypt a credential or return plaintext if not encrypted."""
+    if not value:
+        return ""
+
+    if value.startswith("ENC:"):
+        try:
+            from cryptography.fernet import Fernet
+            key = _get_encryption_key()
+            f = Fernet(base64.urlsafe_b64encode(key))
+            encrypted_data = base64.b64decode(value[4:])
+            return f.decrypt(encrypted_data).decode()
+        except Exception:
+            return ""  # Decryption failed, return empty
+
+    if value.startswith("XOR:"):
+        try:
+            parts = value[4:].split(":")
+            if len(parts) == 2:
+                salt, encoded = parts
+                data = base64.b64decode(encoded)
+                xored = bytes([data[i] ^ ord(salt[i % len(salt)]) for i in range(len(data))])
+                return xored.decode()
+        except Exception:
+            return ""
+
+    # Plaintext (legacy) - return as-is
+    return value
 
 # --- STYLE CONFIGURATION ---
 STYLE = {
@@ -99,7 +152,7 @@ def show_message_dialog(parent, title, message):
 
 # --- CONFIGURATION MANAGEMENT ---
 def load_config():
-    """Reads the configuration file and returns a dictionary."""
+    """Reads the configuration file and returns a dictionary, decrypting credentials."""
     config = {
         "CHECK_FOR_UPDATES": "True",
         "PRESENCE_TYPE": "Playing",
@@ -117,23 +170,28 @@ def load_config():
                 line = line.strip()
                 if "=" in line and not line.startswith("#"):
                     key, value = line.split("=", 1)
-                    config[key.strip()] = value.strip()
+                    key = key.strip()
+                    value = value.strip()
+                    # Decrypt sensitive fields
+                    if key in ("DISCORD_TOKEN", "SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET", "GENIUS_TOKEN"):
+                        value = _decrypt_credential(value)
+                    config[key] = value
     except Exception as e:
         print(f"Error loading config file: {e}")
     return config
 
 def save_config(config_data):
-    """Saves the given dictionary to the configuration file."""
+    """Saves the given dictionary to the configuration file, encrypting credentials."""
     try:
         with open(CONFIG_FILE, "w", encoding='utf-8') as f:
-            # Credentials
-            f.write(f"DISCORD_TOKEN={config_data.get('DISCORD_TOKEN', '')}\n")
-            f.write(f"SPOTIFY_CLIENT_ID={config_data.get('SPOTIFY_CLIENT_ID', '')}\n")
-            f.write(f"SPOTIFY_CLIENT_SECRET={config_data.get('SPOTIFY_CLIENT_SECRET', '')}\n")
-            f.write(f"GENIUS_TOKEN={config_data.get('GENIUS_TOKEN', '')}\n")
-            # General Settings
+            # Credentials (encrypted)
+            f.write(f"DISCORD_TOKEN={_encrypt_credential(config_data.get('DISCORD_TOKEN', ''))}\n")
+            f.write(f"SPOTIFY_CLIENT_ID={_encrypt_credential(config_data.get('SPOTIFY_CLIENT_ID', ''))}\n")
+            f.write(f"SPOTIFY_CLIENT_SECRET={_encrypt_credential(config_data.get('SPOTIFY_CLIENT_SECRET', ''))}\n")
+            f.write(f"GENIUS_TOKEN={_encrypt_credential(config_data.get('GENIUS_TOKEN', ''))}\n")
+            # General Settings (not encrypted)
             f.write(f"CHECK_FOR_UPDATES={config_data.get('CHECK_FOR_UPDATES', 'True')}\n")
-            # Presence Settings
+            # Presence Settings (not encrypted)
             f.write(f"PRESENCE_TYPE={config_data.get('PRESENCE_TYPE', 'Playing')}\n")
             f.write(f"PRESENCE_ROTATION_COUNT={config_data.get('PRESENCE_ROTATION_COUNT', '3')}\n")
             f.write(f"PRESENCE_ROTATION_DELAY={config_data.get('PRESENCE_ROTATION_DELAY', '15')}\n")
