@@ -1,44 +1,44 @@
 # ════════════════════════════════════════════════════════════════════════════
-# ▌ PLAYIFY BOT - Music Discord Bot
+# ▌ PLAYIFY BOT - Music Discord Bot (Optimized)
 # ════════════════════════════════════════════════════════════════════════════
 
 # ── IMPORTS & CONFIGURATION ──
-import discord
-from discord.ext import commands
-from discord import app_commands, Embed
-from discord.ui import View, Button
-from discord import ButtonStyle
-from discord.app_commands import Choice
 import asyncio
-import yt_dlp
-import re
-from spotify_scraper import SpotifyClient
-import random
-from urllib.parse import urlparse, parse_qs
-from cachetools import TTLCache
-import logging
-from playwright.async_api import async_playwright
-from concurrent.futures import ProcessPoolExecutor
-from i18n_translator import I18nTranslator, Locale
-from typing import Optional
+import datetime
 import json
+import logging
+import math
+import os
+import platform
+import random
+import re
+import shutil
+import sqlite3
+import subprocess
+import sys
+import threading
 import time
-import syncedlyrics
+import traceback
+from concurrent.futures import ProcessPoolExecutor
+from contextlib import contextmanager
+from typing import Optional, Dict, List, Tuple, Any
+from urllib.parse import urlparse, parse_qs
+
+import aiohttp
+import discord
 import lyricsgenius
 import psutil
-import datetime
-import platform
-import sys
-import math
-import traceback
-import os
-import shutil
-import subprocess
-import sqlite3
-from contextlib import contextmanager
+import syncedlyrics
+import yt_dlp
+from cachetools import TTLCache
+from discord import Embed, ButtonStyle, app_commands
+from discord.ext import commands
+from discord.app_commands import Choice
+from discord.ui import View, Button
 from dotenv import load_dotenv
-import threading
-import aiohttp
+from i18n_translator import I18nTranslator, Locale
+from playwright.async_api import async_playwright
+from spotify_scraper import SpotifyClient
 
 load_dotenv()
 
@@ -508,11 +508,14 @@ async def load_states_on_startup():
 # ════════════════════════════════════════════════════════════════════════════
 
 
-def ydl_worker(ydl_opts: dict, query: str, cookies_file=None) -> dict:
+def ydl_worker(ydl_opts: dict, query: str, cookies_file: Optional[str] = None) -> dict:
     """Runs in subprocess — low priority, returns serialisable dict."""
     p = psutil.Process()
     try:
-        p.nice(psutil.IDLE_PRIORITY_CLASS if platform.system() == "Windows" else 19)
+        if platform.system() == "Windows":
+            p.nice(psutil.IDLE_PRIORITY_CLASS)
+        else:
+            p.nice(19)
     except Exception:
         pass
 
@@ -527,8 +530,9 @@ def ydl_worker(ydl_opts: dict, query: str, cookies_file=None) -> dict:
 
 
 async def run_ydl_with_low_priority(
-    ydl_opts: dict, query: str, loop=None, specific_cookie_file=None
-):
+    ydl_opts: dict, query: str, loop: Optional[asyncio.AbstractEventLoop] = None,
+    specific_cookie_file: Optional[str] = None
+) -> dict:
     if loop is None:
         loop = asyncio.get_running_loop()
 
@@ -548,7 +552,7 @@ async def run_ydl_with_low_priority(
     return result["data"]
 
 
-async def fetch_video_info_with_retry(query: str, ydl_opts_override=None):
+async def fetch_video_info_with_retry(query: str, ydl_opts_override: Optional[dict] = None) -> dict:
     """Fetch info; retry with cookie rotation on bot detection or age-restriction."""
     base_opts = {
         "format": "bestaudio[acodec=opus]/bestaudio/best",
@@ -586,10 +590,8 @@ async def fetch_video_info_with_retry(query: str, ydl_opts_override=None):
                     return await run_ydl_with_low_priority(
                         opts, query, specific_cookie_file=cookie
                     )
-                except yt_dlp.utils.DownloadError as ce:
+                except (yt_dlp.utils.DownloadError, Exception) as ce:
                     last_exc = ce
-                    continue
-                except Exception:
                     continue
             raise last_exc
         raise
@@ -622,12 +624,14 @@ async def fetch_meta(url: str, _) -> Optional[dict]:
 
 
 def get_messages(key: str, guild_id: int, **kwargs) -> str:
+    """Get localized message for guild with parameters."""
     state = get_guild_state(guild_id)
     return translator.t(key, locale=state.locale.value, **kwargs)
 
 
-def format_duration(seconds) -> str:
-    if seconds is None:
+def format_duration(seconds: Optional[float]) -> str:
+    """Format seconds to HH:MM:SS or MM:SS format."""
+    if seconds is None or seconds < 0:
         return "00:00"
     m, s = divmod(int(seconds), 60)
     h, m = divmod(m, 60)
@@ -637,6 +641,7 @@ def format_duration(seconds) -> str:
 def create_progress_bar(
     current: int, total: int, guild_id: int, bar_length: int = 10
 ) -> str:
+    """Create visual progress bar with unicode characters."""
     if not total:
         return (
             f"`[{'▬' * bar_length}]` {get_messages('player.live_indicator', guild_id)}"
@@ -646,6 +651,7 @@ def create_progress_bar(
 
 
 def parse_time(time_str: str) -> Optional[int]:
+    """Parse time string (MM:SS, HH:MM:SS, or seconds) to total seconds."""
     if not time_str:
         return None
     parts = time_str.strip().split(":")
@@ -662,6 +668,7 @@ def parse_time(time_str: str) -> Optional[int]:
 
 
 def sanitize_query(query: str) -> str:
+    """Remove control characters and normalize whitespace in search query."""
     query = re.sub(r"[\x00-\x1F\x7F]", "", query)
     return re.sub(r"\s+", " ", query).strip()
 
@@ -902,7 +909,7 @@ def clear_audio_cache(guild_id: int):
 # ════════════════════════════════════════════════════════════════════════════
 
 
-async def safe_stop(vc: discord.VoiceClient):
+async def safe_stop(vc: discord.VoiceClient) -> None:
     """Kill FFmpeg process + call discord.py stop() cleanly."""
     if not vc or not (vc.is_playing() or vc.is_paused()):
         return
@@ -952,6 +959,7 @@ async def update_voice_channel_status(guild_id: int, status_text: Optional[str] 
 async def ensure_voice_connection(
     interaction: discord.Interaction,
 ) -> Optional[discord.VoiceClient]:
+    """Ensure voice connection with robust error handling and zombie connection cleanup."""
     guild_id = interaction.guild.id
     state = get_guild_state(guild_id)
     mp = state.music_player
@@ -998,7 +1006,7 @@ async def ensure_voice_connection(
 
         except discord.ClientException as e:
             if "Already connected" in str(e):
-                # Zombie connection — force-heal
+                # Zombie connection — force-heal with recovery
                 if mp.voice_client and mp.current_info:
                     elapsed = (
                         (time.time() - mp.playback_started_at) * mp.playback_speed
@@ -1013,7 +1021,7 @@ async def ensure_voice_connection(
                 try:
                     mp.is_cleaning = True
                     await mp.voice_client.disconnect(force=True)
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0.5)
                 finally:
                     mp.is_cleaning = False
                 return await ensure_voice_connection(interaction)
@@ -1031,7 +1039,7 @@ async def ensure_voice_connection(
 
     elif vc.channel != member.voice.channel:
         await vc.move_to(member.voice.channel)
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(0.3)
 
     if isinstance(vc.channel, discord.StageChannel):
         if interaction.guild.me.voice and interaction.guild.me.voice.suppress:
@@ -1049,7 +1057,8 @@ async def ensure_voice_connection(
     return vc
 
 
-async def play_silence_loop(guild_id: int):
+async def play_silence_loop(guild_id: int) -> None:
+    """Play silence to keep bot in voice channel during 24/7 mode."""
     state = get_guild_state(guild_id)
     mp = state.music_player
     vc = mp.voice_client
@@ -1060,15 +1069,15 @@ async def play_silence_loop(guild_id: int):
     mp.is_playing_silence = True
     source = "anullsrc=channel_layout=stereo:sample_rate=48000"
     ff_opts = {
-    "before_options": "-re -f lavfi",
-    "options": "-vn -f s16le -ar 48000 -ac 2",
+        "before_options": "-re -f lavfi",
+        "options": "-vn -f s16le -ar 48000 -ac 2",
     }
 
     try:
         while vc.is_connected():
             if not vc.is_playing():
                 vc.play(discord.FFmpegPCMAudio(source, **ff_opts), after=lambda e: None)
-            await asyncio.sleep(20)
+            await asyncio.sleep(15)  # Check every 15s instead of 20s for better responsiveness
     except asyncio.CancelledError:
         pass
     except Exception as e:
@@ -1484,11 +1493,9 @@ class LazySearchItem:
                         continue
 
                     best = entries[0]
-                    # extract_flat kadang hanya kembalikan video ID, bukan full URL
                     url = best.get("webpage_url") or best.get("url", "")
                     if not url:
                         continue
-                    # Kalau hanya video ID (bukan URL), jadikan full URL
                     if not url.startswith("http"):
                         url = f"https://www.youtube.com/watch?v={url}"
 
@@ -1734,9 +1741,8 @@ async def play_audio(
                             fetch_video_info_with_retry(url_for_fetch), timeout=15.0
                         )
                         mp.current_info.update(refreshed)
-                        # Cache the stream URL only if it's valid
                         stream_url = refreshed.get("url")
-                        if stream_url:  # ← Validate before caching
+                        if stream_url: 
                             stream_url_cache[url_for_fetch] = {"url": stream_url}
                         break
                     except asyncio.TimeoutError:
@@ -3244,7 +3250,9 @@ class SearchView(View):
 
 
 class FilterView(View):
-    def __init__(self, interaction):
+    """Audio filter toggle view with per-section organization."""
+
+    def __init__(self, interaction: discord.Interaction) -> None:
         super().__init__(timeout=None)
         self.guild_id = interaction.guild.id
         self.state = get_guild_state(self.guild_id)
@@ -3260,22 +3268,28 @@ class FilterView(View):
             btn.callback = self._cb
             self.add_item(btn)
 
-    async def _cb(self, interaction):
-        # FIX BUG 7: pakai removeprefix bukan split("_")[1] agar aman untuk nama apapun
+    async def _cb(self, interaction: discord.Interaction) -> None:
+        """Handle filter toggle with optimized style updates."""
         effect = interaction.data["custom_id"].removeprefix("filter_")
         af = self.state.server_filters
         if effect in af:
             af.remove(effect)
         else:
             af.add(effect)
+
+        # Update button styles efficiently
         for child in self.children:
             if isinstance(child, Button):
+                effect_name = child.custom_id.removeprefix("filter_") if child.custom_id else ""
                 child.style = (
                     ButtonStyle.success
-                    if child.custom_id.removeprefix("filter_") in af
+                    if effect_name in af
                     else ButtonStyle.secondary
                 )
+
         await interaction.response.edit_message(view=self)
+
+        # Apply filter if music is playing
         mp = get_player(self.guild_id)
         if mp.voice_client and (
             mp.voice_client.is_playing() or mp.voice_client.is_paused()
@@ -3292,7 +3306,9 @@ class FilterView(View):
 
 
 class LyricsView(View):
-    def __init__(self, pages, original_embed, guild_id):
+    """Paginated lyrics display with refinement support."""
+
+    def __init__(self, pages: List[str], original_embed: Embed, guild_id: int) -> None:
         super().__init__(timeout=300.0)
         self.pages = pages
         self.original_embed = original_embed
@@ -3302,7 +3318,8 @@ class LyricsView(View):
         self.next_btn.label = get_messages("lyrics.button.next", guild_id)
         self.refine_btn.label = get_messages("lyrics.button.refine", guild_id)
 
-    def _update(self):
+    def _update(self) -> Embed:
+        """Update embed with current page."""
         self.original_embed.description = self.pages[self.current_page]
         self.original_embed.set_footer(
             text=get_messages(
@@ -3315,7 +3332,7 @@ class LyricsView(View):
         return self.original_embed
 
     @discord.ui.button(style=discord.ButtonStyle.grey)
-    async def prev_btn(self, interaction, button):
+    async def prev_btn(self, interaction: discord.Interaction, button: Button) -> None:
         if self.current_page > 0:
             self.current_page -= 1
         self.prev_btn.disabled = self.current_page == 0
@@ -3323,7 +3340,7 @@ class LyricsView(View):
         await interaction.response.edit_message(embed=self._update(), view=self)
 
     @discord.ui.button(style=discord.ButtonStyle.grey)
-    async def next_btn(self, interaction, button):
+    async def next_btn(self, interaction: discord.Interaction, button: Button) -> None:
         if self.current_page < max(0, len(self.pages) - 1):
             self.current_page += 1
         self.next_btn.disabled = self.current_page >= max(0, len(self.pages) - 1)
@@ -3331,12 +3348,14 @@ class LyricsView(View):
         await interaction.response.edit_message(embed=self._update(), view=self)
 
     @discord.ui.button(emoji="✏️", style=discord.ButtonStyle.secondary)
-    async def refine_btn(self, interaction, button):
+    async def refine_btn(self, interaction: discord.Interaction, button: Button) -> None:
         await interaction.response.send_modal(RefineLyricsModal(interaction.message))
 
 
 class RefineLyricsModal(discord.ui.Modal):
-    def __init__(self, message):
+    """Modal for refining lyrics search query."""
+
+    def __init__(self, message: discord.Message) -> None:
         self.msg_to_edit = message
         self.guild_id = message.guild.id
         self.is_kw = get_mode(self.guild_id)
@@ -3348,7 +3367,8 @@ class RefineLyricsModal(discord.ui.Modal):
         )
         self.add_item(self.query)
 
-    async def on_submit(self, interaction):
+    async def on_submit(self, interaction: discord.Interaction) -> None:
+        """Handle lyrics refinement submission."""
         await interaction.response.defer(thinking=True, ephemeral=True)
         if not genius:
             return await interaction.followup.send(

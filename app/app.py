@@ -1,49 +1,71 @@
-import customtkinter as ctk
-import os
-import sys
+# ════════════════════════════════════════════════════════════════════════════
+# PLAYIFY - Windows Desktop Application (Optimized)
+# Updated: April 5, 2026
+# ════════════════════════════════════════════════════════════════════════════
+
+# ─── STANDARD LIBRARY ───────────────────────────────────────────────────────
+import base64
+import hashlib
 import multiprocessing
+import os
 import queue
 import re
+import secrets
+import socket
+import subprocess
+import sys
+import tempfile
+import threading
 import time
 import webbrowser
-import threading
+from typing import Optional, Dict, Any
+
+# ─── GUI FRAMEWORK ─────────────────────────────────────────────────────────
+import customtkinter as ctk
 import pystray
 import winreg as reg
 from PIL import ImageTk, Image
-import subprocess
-import requests
-import tempfile
-import socket
-from packaging.version import parse as parse_version
-import base64
-import hashlib
-import secrets
 
-# OpenCV is used for video playback in the tutorial
+# ─── WEB & HTTP ────────────────────────────────────────────────────────────
+import requests
+from packaging.version import parse as parse_version
+
+# ─── COMPUTER VISION (Optional, for advanced features) ────────────────────
 import cv2
 
-# --- CONFIGURATION ---
-APP_NAME = "Playify"
-# ==============================================================================
-# VERSION MANAGEMENT:
-# Increment this version number for each new release.
-# Use semantic versioning (e.g., 1.1.1, 1.2.0, 2.0.0).
-# The GitHub release tag MUST match this number, prefixed with 'v' (e.g., v1.2.1).
-# ==============================================================================
-CURRENT_VERSION = "1.3.0"
-UPDATE_REPO_URL = "https://api.github.com/repos/alan7383/playify/releases/latest"
+# ════════════════════════════════════════════════════════════════════════════
+# APPLICATION CONFIGURATION & CONSTANTS
+# ════════════════════════════════════════════════════════════════════════════
 
-# Centralized path for all application data (config, browsers, etc.)
-APP_DATA_DIR = os.path.join(os.getenv('LOCALAPPDATA'), APP_NAME)
+# ─── APPLICATION METADATA ──────────────────────────────────────────────────
+APP_NAME: str = "Playify"
+CURRENT_VERSION: str = "1.3.0"
+UPDATE_REPO_URL: str = "https://api.github.com/repos/alan7383/playify/releases/latest"
+
+# ─── DIRECTORIES & PATHS ───────────────────────────────────────────────────
+APP_DATA_DIR: str = os.path.join(os.getenv('LOCALAPPDATA') or '', APP_NAME)
 os.makedirs(APP_DATA_DIR, exist_ok=True)
+CONFIG_FILE: str = os.path.join(APP_DATA_DIR, "playify_config.env")
 
-CONFIG_FILE = os.path.join(APP_DATA_DIR, "playify_config.env")
+# ─── ENCRYPTION & SECURITY ─────────────────────────────────────────────────
+ENCRYPTION_ALGORITHM: str = "pbkdf2_hmac"
+ENCRYPTION_HASH_NAME: str = "sha256"
+ENCRYPTION_ITERATIONS: int = 100_000
+ENCRYPTION_KEY_SIZE: int = 32
+ENCRYPTION_SALT: bytes = b"playify_salt"
 
-# --- Encryption Utilities for Secure Credential Storage ---
-def _get_encryption_key():
-    """Derive a deterministic encryption key from the machine."""
-    machine_id = os.getenv("COMPUTERNAME", "playify")
-    return hashlib.pbkdf2_hmac("sha256", machine_id.encode(), b"playify_salt", 100000)[:32]
+# ─── UI TIMEOUT SETTINGS ───────────────────────────────────────────────────
+TIMEOUT_UPDATE_CHECK: int = 5_000         # 5 seconds for update check
+TIMEOUT_VERSION_PARSE: float = 2.0        # 2 seconds for version parsing
+
+# ─── THEME COLORS (Centralized) ────────────────────────────────────────────
+THEME_COLORS: Dict[str, str] = {
+    "bg": "#000000",
+    "text": "#EAEAEA",
+    "text_secondary": "#B0B0B0",
+    "accent": "#9B59B6",
+    "accent_hover": "#8E44AD",
+    "success": "#2ECC71",
 
 def _encrypt_credential(value: str) -> str:
     """Encrypt a credential using Fernet-style encryption (base64-encoded)."""

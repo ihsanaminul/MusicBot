@@ -1,7 +1,89 @@
+# ════════════════════════════════════════════════════════════════════════════
+# PLAYIFY BOT - Docker Compose Configuration
+# Updated: April 5, 2026 - Optimized for Performance & Reliability
+# ════════════════════════════════════════════════════════════════════════════
+
+version: "3.9"
+
 services:
   playify-discord-bot:
-    env_file: .env
+    # ─── BUILD CONFIGURATION ───────────────────────────────────────────────
     build:
       context: .
       dockerfile: Dockerfile
-    restart: unless-stopped
+      # Build cache optimization
+      cache_from:
+        - type=registry
+
+    # ─── CONTAINER NAME & NETWORK ──────────────────────────────────────────
+    container_name: playify-bot
+    hostname: playify-bot
+    networks:
+      - playify-network
+
+    # ─── ENVIRONMENT & SECRETS ────────────────────────────────────────────
+    # Load from .env file for configuration
+    env_file:
+      - .env
+
+    # ─── RESOURCE LIMITS (Performance Optimization) ────────────────────────
+    # Prevent container from consuming excessive resources
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0" # Max 2 CPU cores
+          memory: 2G # Max 2GB RAM
+        reservations:
+          cpus: "1.0" # Reserved 1 CPU core
+          memory: 1G # Reserved 1GB RAM
+
+    # ─── RESTART POLICY ────────────────────────────────────────────────────
+    # Automatically restart on failure or host restart
+    restart_policy:
+      condition: unless-stopped
+      delay: 10s
+      max_attempts: 5
+      window: 120s
+
+    # ─── VOLUME MOUNTS (State Persistence) ─────────────────────────────────
+    volumes:
+      # Database persistent storage
+      - playify_db:/app/playify_state.db
+      # Cache directory
+      - playify_cache:/app/.cache
+      # Logs (optional, for debugging)
+      - playify_logs:/app/logs
+
+    # ─── LOGGING CONFIGURATION (Performance & Debugging) ────────────────────
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m" # Max log file size
+        max-file: "3" # Max number of log files
+        labels: "service=playify-bot"
+
+    # ─── HEALTHCHECK (Reliability Monitoring) ──────────────────────────────
+    healthcheck:
+      test: ["CMD", "python", "-c", "import discord; print('ok')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+    # ─── STDIN & TTY (Interactive) ─────────────────────────────────────────
+    stdin_open: true
+    tty: true
+
+# ─── VOLUMES ──────────────────────────────────────────────────────────────
+volumes:
+  playify_db:
+    driver: local
+  playify_cache:
+    driver: local
+  playify_logs:
+    driver: local
+
+# ─── NETWORKS ────────────────────────────────────────────────────────────
+networks:
+  playify-network:
+    driver: bridge

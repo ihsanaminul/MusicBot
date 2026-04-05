@@ -1,23 +1,54 @@
-# Core Discord library and voice dependency
-git+https://github.com/Rapptz/discord.py
-PyNaCl
+# ════════════════════════════════════════════════════════════════════════════
+# PLAYIFY BOT - Core Dependencies (Production)
+# Updated: April 5, 2026 - Optimized for Performance & Stability
+# ════════════════════════════════════════════════════════════════════════════
 
-# Audio/Video downloading
-yt_dlp
+# ─── DISCORD BOT & VOICE ─────────────────────────────────────────────────────
+# discord.py: v2.5.1 - Latest stable with slash commands, buttons, interactions
+discord.py==2.5.1
 
-# Music platform APIs and scrapers
-spotipy
-spotifyscraper[all]
+# PyNaCl: 1.5.0 - Voice encryption and audio quality
+PyNaCl==1.5.0
 
-# Web scraping
-requests
-playwright
+# aiohttp: 3.10.0+ - Async HTTP client for concurrent API calls
+aiohttp>=3.10.0
 
-# Lyrics
-syncedlyrics
-lyricsgenius
+# ─── AUDIO/VIDEO DOWNLOADING ────────────────────────────────────────────────
+# yt_dlp: Latest stable (2026.3+) - Modern youtube-dl with optimized performance
+yt_dlp>=2026.3.0
 
-# Utilities
-cachetools
-psutil
-python-dotenv
+# ─── MUSIC PLATFORM APIs & SCRAPERS ─────────────────────────────────────────
+# spotipy: 2.24.0+ - Official Spotify Web API client with caching support
+spotipy>=2.24.0
+
+# spotifyscraper: 1.2.0+ - Lightweight Spotify metadata scraper (all extras)
+spotifyscraper[all]>=1.2.0
+
+# ─── WEB SCRAPING & HTTP ────────────────────────────────────────────────────
+# requests: 2.32.0+ - Synchronous HTTP library for API requests
+requests>=2.32.0
+
+# playwright: 1.46.0+ - Browser automation for JavaScript-heavy sites
+playwright>=1.46.0
+
+# ─── LYRICS & SYNC ──────────────────────────────────────────────────────────
+# syncedlyrics: 1.0.1+ - Fetch time-synced lyrics from multiple sources
+syncedlyrics>=1.0.0
+
+# lyricsgenius: 4.13.0+ - Genius lyrics API client with caching
+lyricsgenius>=4.13.0
+
+# ─── UTILITIES & PERFORMANCE ────────────────────────────────────────────────
+# cachetools: 5.4.0+ - TTL/LRU cache implementations for URL/metadata optimization
+cachetools>=5.4.0
+
+# psutil: 6.0.0+ - System monitoring and process priority management
+psutil>=6.0.0
+
+# python-dotenv: 1.0.0+ - Environment configuration management
+python-dotenv>=1.0.0
+
+# ─── LOCAL MODULES ───────────────────────────────────────────────────────────
+# i18n_translator: Custom localization module (local package)
+# Include if packaged separately:
+# i18n_translator>=1.0.0
