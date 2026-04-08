@@ -1806,9 +1806,29 @@ async def play_audio(
         if not (mp.voice_client and mp.voice_client.is_connected()):
             return
 
-        mp.voice_client.play(
-            source, after=lambda e: bot.loop.create_task(after_playing(e))
-        )
+        # Ensure nothing is playing before we start
+        if mp.voice_client.is_playing():
+            mp.voice_client.stop()
+            await asyncio.sleep(0.2)
+
+        try:
+            mp.voice_client.play(
+                source, after=lambda e: bot.loop.create_task(after_playing(e))
+            )
+        except discord.errors.ClientException as e:
+            if "Already playing audio" in str(e):
+                logger.warning(f"[{guild_id}] Already playing audio, stopping and retrying...")
+                mp.voice_client.stop()
+                await asyncio.sleep(0.5)
+                try:
+                    mp.voice_client.play(
+                        source, after=lambda e: bot.loop.create_task(after_playing(e))
+                    )
+                except Exception as retry_error:
+                    logger.error(f"[{guild_id}] Retry failed: {retry_error}")
+                    return
+            else:
+                raise
         mp.start_time = seek_time
         mp.playback_started_at = time.time()
 
@@ -5467,7 +5487,9 @@ async def on_voice_state_update(member, before, after):
         if not humans_in_channel:
             if state._24_7_mode:
                 # In 24/7 mode, keep music playing even when alone
-                pass
+                # Make sure silence loop is ready if music stops for any reason
+                if not mp.silence_task or mp.silence_task.done():
+                    mp.silence_task = bot.loop.create_task(play_silence_loop(gid))
             else:
                 if vc.is_playing() and not mp.is_playing_silence:
                     mp.is_paused_by_leave = True
@@ -5477,11 +5499,6 @@ async def on_voice_state_update(member, before, after):
                         ) * mp.playback_speed
                         mp.playback_started_at = None
                     await safe_stop(vc)
-
-            if state._24_7_mode:
-                if not mp.silence_task or mp.silence_task.done():
-                    mp.silence_task = bot.loop.create_task(play_silence_loop(gid))
-            else:
 
                 async def _leave_if_still_alone():
                     await asyncio.sleep(60)
@@ -5504,9 +5521,11 @@ async def on_voice_state_update(member, before, after):
                 if mp.current_info:
                     if was_silence:
                         mp.silence_task.cancel()
+                        # Give silence loop time to gracefully stop
+                        await asyncio.sleep(0.3)
                         if vc.is_playing():
                             vc.stop()
-                        await asyncio.sleep(0.1)
+                        await asyncio.sleep(0.2)
                     ts = mp.start_time
                     if mp.is_current_live:
                         mp.is_resuming_live = True
