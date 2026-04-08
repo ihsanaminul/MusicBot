@@ -1336,9 +1336,8 @@ async def create_controller_embed(bot_ref, guild_id: int) -> Embed:
         sl.append(get_messages("queue_status_loop", guild_id))
     if state._24_7_mode:
         sl.append(
-            get_messages("queue_status_24_7", guild_id).format(
-                mode="Auto" if mp.autoplay_enabled else "Normal"
-            )
+            get_messages("queue_status_24_7", guild_id,
+                mode="Auto" if mp.autoplay_enabled else "Loop")
         )
     elif mp.autoplay_enabled:
         sl.append(get_messages("queue_status_autoplay", guild_id))
@@ -1817,7 +1816,9 @@ async def play_audio(
             )
         except discord.errors.ClientException as e:
             if "Already playing audio" in str(e):
-                logger.warning(f"[{guild_id}] Already playing audio, stopping and retrying...")
+                logger.warning(
+                    f"[{guild_id}] Already playing audio, stopping and retrying..."
+                )
                 mp.voice_client.stop()
                 await asyncio.sleep(0.5)
                 try:
@@ -2821,9 +2822,8 @@ class QueueView(View):
         state = get_guild_state(gid)
         if state._24_7_mode:
             sl.append(
-                get_messages("queue_status_24_7", gid).format(
-                    mode="Auto" if mp.autoplay_enabled else "Normal"
-                )
+                get_messages("queue_status_24_7", gid,
+                    mode="Auto" if mp.autoplay_enabled else "Loop")
             )
         elif mp.autoplay_enabled:
             sl.append(get_messages("queue_status_autoplay", gid))
@@ -5531,7 +5531,9 @@ async def on_voice_state_update(member, before, after):
                         mp.is_resuming_live = True
                         bot.loop.create_task(play_audio(gid, is_a_loop=True))
                     else:
-                        bot.loop.create_task(play_audio(gid, seek_time=ts, is_a_loop=True))
+                        bot.loop.create_task(
+                            play_audio(gid, seek_time=ts, is_a_loop=True)
+                        )
 
 
 # ==============================================================================
