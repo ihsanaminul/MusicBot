@@ -48,6 +48,10 @@ psutil>=6.0.0
 # python-dotenv: 1.0.0+ - Environment configuration management
 python-dotenv>=1.0.0
 
+# ─── IMAGE PROCESSING ─────────────────────────────────────────────────────
+# Pillow: 10.4.0+ - Image processing for profile cards and thumbnails
+Pillow>=10.4.0
+
 # ─── LOCAL MODULES ───────────────────────────────────────────────────────────
 # i18n_translator: Custom localization module (local package)
 # Include if packaged separately:

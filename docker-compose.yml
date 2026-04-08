@@ -1,12 +1,12 @@
 # ════════════════════════════════════════════════════════════════════════════
-# PLAYIFY BOT - Docker Compose Configuration
+# MELODIFY BOT - Docker Compose Configuration
 # Updated: April 5, 2026 - Optimized for Performance & Reliability
 # ════════════════════════════════════════════════════════════════════════════
 
 version: "3.9"
 
 services:
-  playify-discord-bot:
+  melodify-discord-bot:
     # ─── BUILD CONFIGURATION ───────────────────────────────────────────────
     build:
       context: .
@@ -16,10 +16,10 @@ services:
         - type=registry
 
     # ─── CONTAINER NAME & NETWORK ──────────────────────────────────────────
-    container_name: playify-bot
-    hostname: playify-bot
+    container_name: melodify-bot
+    hostname: melodify-bot
     networks:
-      - playify-network
+      - melodify-network
 
     # ─── ENVIRONMENT & SECRETS ────────────────────────────────────────────
     # Load from .env file for configuration
@@ -48,11 +48,11 @@ services:
     # ─── VOLUME MOUNTS (State Persistence) ─────────────────────────────────
     volumes:
       # Database persistent storage
-      - playify_db:/app/playify_state.db
+      - melodify_db:/app/melodify_state.db
       # Cache directory
-      - playify_cache:/app/.cache
+      - melodify_cache:/app/.cache
       # Logs (optional, for debugging)
-      - playify_logs:/app/logs
+      - melodify_logs:/app/logs
 
     # ─── LOGGING CONFIGURATION (Performance & Debugging) ────────────────────
     logging:
@@ -60,7 +60,7 @@ services:
       options:
         max-size: "10m" # Max log file size
         max-file: "3" # Max number of log files
-        labels: "service=playify-bot"
+        labels: "service=melodify-bot"
 
     # ─── HEALTHCHECK (Reliability Monitoring) ──────────────────────────────
     healthcheck:
@@ -76,14 +76,14 @@ services:
 
 # ─── VOLUMES ──────────────────────────────────────────────────────────────
 volumes:
-  playify_db:
+  melodify_db:
     driver: local
-  playify_cache:
+  melodify_cache:
     driver: local
-  playify_logs:
+  melodify_logs:
     driver: local
 
 # ─── NETWORKS ────────────────────────────────────────────────────────────
 networks:
-  playify-network:
+  melodify-network:
     driver: bridge

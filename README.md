@@ -1,7 +1,7 @@
-<h1 align="center">🎵 Cleo Musik ♪(｡◕‿◕｡)</h1>
+<h1 align="center">🎵 Melodify ♪(｡◕‿◕｡)</h1>
 
 <p align="center">
-  <img src="https://image2url.com/images/1764519755428-cad6bced-fa34-4c61-9d01-4fb741893f6e.png" alt="Cleo Musik Banner" width="900">
+  <img src="https://image2url.com/images/1764519755428-cad6bced-fa34-4c61-9d01-4fb741893f6e.png" alt="Melodify Banner" width="900">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 ## Table of Contents
 
-- [What is Cleo Musik?](#what-is-cleo-musik)
+- [What is Melodify?](#what-is-cleo-musik)
 - [Key Features](#key-features)
 - [System Requirements](#system-requirements)
 - [Installation](#installation)
@@ -32,9 +32,9 @@
 
 <a id="what-is-cleo-musik"></a>
 
-## ＼(＾O＾)／ What is Cleo Musik?
+## ＼(＾O＾)／ What is Melodify?
 
-Cleo Musik is a minimalist Discord music bot — no ads, no premium tiers, no limits, just music and kawaii vibes!
+Melodify is a minimalist Discord music bot — no ads, no premium tiers, no limits, just music and kawaii vibes!
 
 - **No web UI**: Only simple slash commands.
 - **100% free**: All features unlocked for everyone.
@@ -98,7 +98,7 @@ pip install -r requirements.txt
 playwright install
 cp .env.example .env
 # Edit .env with your tokens, then:
-python playify.py
+python melodify.py
 ```
 
 ### 🔑 Required Tokens (`.env`)
@@ -197,5 +197,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 <p align="center">
   Built with ☕ and love by <a href="https://github.com/ihsanaminul">ihsanaminul</a> (｡♥‿♥｡)<br/>
-  <sub>Cleo Musik v2026.04 — Keep the music playing~</sub>
+  <sub>Melodify v2026.04 — Keep the music playing~</sub>
 </p>

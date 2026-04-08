@@ -1,5 +1,5 @@
 # ════════════════════════════════════════════════════════════════════════════
-# PLAYIFY BOT - Docker Image (Optimized for Performance)
+# MELODIFY BOT - Docker Image (Optimized for Performance)
 # Updated: April 5, 2026
 # Base: Python 3.12-slim for minimal footprint
 # ════════════════════════════════════════════════════════════════════════════
@@ -45,7 +45,7 @@ COPY . .
 
 # ─── RUNTIME CONFIGURATION ────────────────────────────────────────────────
 # Labels for metadata
-LABEL maintainer="Playify Bot"
+LABEL maintainer="Melodify Bot"
 LABEL description="Discord Music Bot with Multi-Platform Support"
 LABEL version="2026.4.5"
 
